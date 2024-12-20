@@ -1,0 +1,17 @@
+/* foundation */
+@use "./foundation/reset.scss";
+@use "./foundation/variables.scss";
+@use "./foundation/common.scss";
+@use "./foundation/breakPoint.scss";
+@use "./foundation/pxvw.scss";
+
+/* component */
+@use "./component/annotation.scss";
+
+/* ui */
+@use "./ui/header.scss";
+
+/* tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

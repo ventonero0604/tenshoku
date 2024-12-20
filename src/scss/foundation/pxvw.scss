@@ -1,0 +1,8 @@
+@function pxvw($pixel, $device) {
+  @if $device == 'sp' {
+    @return calc($pixel / 375 * 100vw);
+  }
+  @if $device == 'pc' {
+    @return calc($pixel / 1600 * 100vw);
+  }
+}

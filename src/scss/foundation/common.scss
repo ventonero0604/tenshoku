@@ -1,0 +1,66 @@
+@use "./variables.scss";
+@use "./breakPoint.scss" as breakPoint;
+
+html {
+  scroll-behavior: smooth;
+  --gold: #b59443;
+  --turquoise: #168ab1;
+  --dark-gray: #2b2b2b;
+  --light-gray: #f0f0f0;
+  --pale-blue: #f2f7f9;
+  --orange-red: linear-gradient(90deg, #f90 0%, #ff2600 100%);
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  position: relative;
+  color: var(--dark-gray);
+}
+
+a {
+  color: var(--dark-gray);
+}
+
+a,
+button {
+  transition: all 0.2s;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+em {
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover img {
+    transition: 0.2s;
+  }
+}
+
+button {
+  > span {
+    pointer-events: none;
+  }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+textarea,
+select[multiple],
+button {
+  border: none;
+}
