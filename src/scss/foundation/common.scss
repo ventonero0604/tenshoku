@@ -1,8 +1,6 @@
-@use "./variables.scss";
-@use "./breakPoint.scss" as breakPoint;
-
 html {
   scroll-behavior: smooth;
+  --deep-blue: #081059;
   --gold: #b59443;
   --turquoise: #168ab1;
   --dark-gray: #2b2b2b;
@@ -13,20 +11,25 @@ html {
 
 body {
   font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
   font-size: 16px;
+  line-height: normal;
   position: relative;
   color: var(--dark-gray);
+  background: #f5f5f5;
+}
+
+.is-fixed,
+.is-fixed body {
+  height: 100%;
+  overflow: hidden;
 }
 
 a {
   color: var(--dark-gray);
-}
-
-a,
-button {
   transition: all 0.2s;
   &:hover {
-    opacity: 0.6;
+    opacity: 0.7;
   }
 }
 

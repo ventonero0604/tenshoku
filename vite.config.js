@@ -1,53 +1,54 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
 
-import { resolve } from 'path';
+import { resolve } from "path";
 
 //handlebarsプラグインimport
-import handlebars from 'vite-plugin-handlebars';
+import handlebars from "vite-plugin-handlebars";
 
 //HTML上で出し分けたい各ページごとの情報
 const pageData = {
-  'index.html': {
+  "index.html": {
     isHome: true,
-    title: 'Main Page'
+    title: "Main Page",
   },
-  'hoge.html': {
+  "hoge.html": {
     isHome: false,
-    title: 'Hoge'
-  }
+    title: "Hoge",
+  },
 };
 
-const root = 'src';
+const root = "src";
 
 export default defineConfig({
+  base: "./",
   server: {
-    host: true //IPアドレスを有効化
+    host: true, //IPアドレスを有効化
   },
   root: root, //開発ディレクトリ設定
   build: {
-    outDir: '../dist', //出力場所の指定
+    outDir: "../dist", //出力場所の指定
     rollupOptions: {
       //ファイル出力設定
       output: {
-        assetFileNames: assetInfo => {
-          let extType = assetInfo.name.split('.')[1];
+        assetFileNames: (assetInfo) => {
+          let extType = assetInfo.name.split(".")[1];
           if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
-            extType = 'images';
+            extType = "images";
           }
           //ビルド時のCSS名を明記してコントロールする
-          if (extType === 'css') {
+          if (extType === "css") {
             return `assets/css/style.css`;
           }
           return `assets/${extType}/[name][extname]`;
         },
-        chunkFileNames: 'assets/js/[name].js',
-        entryFileNames: 'assets/js/[name].js'
+        chunkFileNames: "assets/js/[name].js",
+        entryFileNames: "assets/js/[name].js",
       },
       input: {
-        index: resolve(__dirname, 'index.html'),
-        hoge: resolve(__dirname, 'hoge.html')
-      }
-    }
+        index: resolve(__dirname, root, "index.html"),
+        hoge: resolve(__dirname, root, "hoge.html"),
+      },
+    },
   },
   /*
     プラグインの設定を追加
@@ -55,11 +56,11 @@ export default defineConfig({
   plugins: [
     handlebars({
       //コンポーネントの格納ディレクトリを指定
-      partialDirectory: resolve(__dirname, root, 'components'),
+      partialDirectory: resolve(__dirname, root, "components"),
       //各ページ情報の読み込み
       context(pagePath) {
         return pageData[pagePath];
-      }
-    })
-  ]
+      },
+    }),
+  ],
 });

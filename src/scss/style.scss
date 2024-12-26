@@ -1,15 +1,24 @@
 /* foundation */
 @use "./foundation/reset.scss";
-@use "./foundation/variables.scss";
+@use "./foundation/text.scss";
 @use "./foundation/common.scss";
 @use "./foundation/breakPoint.scss";
 @use "./foundation/pxvw.scss";
 
 /* component */
-@use "./component/annotation.scss";
+@use "./component/wrapper.scss";
+@use "./component/sectionTitle.scss";
+@use "./component/item.scss";
+@use "./component/highlight.scss";
+@use "./component/button.scss";
 
 /* ui */
 @use "./ui/header.scss";
+@use "./ui/navi.scss";
+@use "./ui/footer.scss";
+
+/* page */
+@use "./page/top.scss";
 
 /* tailwind */
 @tailwind base;
