@@ -46,7 +46,7 @@ export default defineConfig({
       },
       input: {
         index: resolve(__dirname, root, "index.html"),
-        hoge: resolve(__dirname, root, "hoge.html"),
+        // hoge: resolve(__dirname, root, "hoge.html"),
       },
     },
   },
