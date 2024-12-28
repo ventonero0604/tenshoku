@@ -20,8 +20,7 @@ const pageData = {
 const root = "src";
 
 export default defineConfig({
-  // base: "./",
-  base: "/preview/",
+  base: "./",
   server: {
     host: true, //IPアドレスを有効化
   },
