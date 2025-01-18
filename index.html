@@ -88,169 +88,170 @@
         </div>
       </section>
 
-      <section class="search">
-        <input id="toggle" type="checkbox" class="toggle">
-        <label class="expand" for="toggle"><span>条件で転職サイトを探す</span></label>
-        <div class="content">
-          <form action="result02.php" method="post" class="search_step_form" id="form_id02">
-            <div id="step_area">
-              <div class="step_count">
-                <ul>
-                  <li class="active">Q1</li>
-                  <li>Q2</li>
-                  <li>Q3</li>
-                  <li>Q4</li>
-                </ul>
+      <section class="Search">
+        <div class="SearchExpand">
+          <input id="toggle" type="checkbox" class="toggle">
+          <label class="expand" for="toggle"><span>条件で転職サイトを探す</span></label>
+          <div class="content">
+            <form action="result02.php" method="post" class="search_step_form" id="form_id02">
+              <div id="step_area">
+                <div class="step_count">
+                  <ul>
+                    <li class="active">Q1</li>
+                    <li>Q2</li>
+                    <li>Q3</li>
+                    <li>Q4</li>
+                  </ul>
+                </div>
+                <div class="step_title"><span>Q1.</span> 現在のご年齢は？</div>
+        
+                <div class="step_body">
+                  <div class="step radios_wrap not_last open sp_column3" data-title="現在のご年齢は？">
+                    <div class="wrapper">
+                      <div class="label_wrap"><label><input type="radio" name="age" value="00"
+                            form="form_id02"><span>指定なし</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="age" value="20"
+                            form="form_id02"><span>～24歳</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="age" value="25"
+                            form="form_id02"><span>25～29歳</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="age" value="30"
+                            form="form_id02"><span>30～39歳</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="age" value="40"
+                            form="form_id02"><span>40～49歳</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="age" value="50"
+                            form="form_id02"><span>50～59歳</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="age" value="60"
+                            form="form_id02"><span>60歳～</span></label></div>
+                    </div>
+                  </div>
+                  <!--Question1-->
+        
+                  <div class="step radios_wrap not_last column2" data-title="現在の状況は？">
+                    <div class="wrapper">
+                      <div class="label_wrap"><label><input type="radio" name="status" value="00"
+                            form="form_id02"><span>指定なし</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="status" value="01"
+                            form="form_id02"><span>正社員</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="status" value="02"
+                            form="form_id02"><span>契約社員</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="status" value="03"
+                            form="form_id02"><span>派遣社員</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="status" value="04"
+                            form="form_id02"><span>バイト・パート</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="status" value="05"
+                            form="form_id02"><span>無職</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="status" value="06"
+                            form="form_id02"><span>学生</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="status" value="07"
+                            form="form_id02"><span>その他</span></label></div>
+                    </div>
+                    <div class="button_wrap">
+                      <button type="button" class="prev">戻る</button>
+                    </div>
+                  </div>
+                  <!--Question2-->
+        
+                  <div class="step radios_wrap not_last column2" data-title="現在のご年収は？">
+                    <div class="wrapper">
+                      <div class="label_wrap"><label><input type="radio" name="income" value="00"
+                            form="form_id02"><span>指定なし</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="income" value="01"
+                            form="form_id02"><span>～299万円</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="income" value="02"
+                            form="form_id02"><span>300～399万円</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="income" value="03"
+                            form="form_id02"><span>400～499万円</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="income" value="04"
+                            form="form_id02"><span>500～599万円</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="income" value="05"
+                            form="form_id02"><span>600～699万円</span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="income" value="06"
+                            form="form_id02"><span>700万円～</span></label></div>
+                    </div>
+                    <div class="button_wrap">
+                      <button type="button" class="prev">戻る</button>
+                    </div>
+                  </div>
+                  <!--Question3-->
+        
+                  <div class="step radios_wrap column2 touch_submit" data-title="ご希望の職種は？">
+                    <div class="wrapper">
+                      <div class="label_wrap"><label><input type="radio" name="occupation" value="01"
+                            form="form_id02"><span>営業・セールス・CS<br><small>営業職/カスタマーサポート…</small></span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="occupation" value="02"
+                            form="form_id02"><span>企画・マーケ・経営<br><small>広告/宣伝/販促/営業企画…</small></span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="occupation" value="03"
+                            form="form_id02"><span>管理<br><small>会計/財務/法務/広報/人事…</small></span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="occupation" value="04"
+                            form="form_id02"><span>事務・アシスタント<br><small>営業事務/データ入力/秘書…</small></span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="occupation" value="05"
+                            form="form_id02"><span>販売・サービス<br><small>接客/販売/店舗運営/運輸…</small></span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="occupation" value="06"
+                            form="form_id02"><span>コンサルタント<br><small>経営/戦略/アナリスト…</small></span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="occupation" value="07"
+                            form="form_id02"><span>クリエイティブ職<br><small>デザイナー/ディレクター/編集…</small></span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="occupation" value="08"
+                            form="form_id02"><span>ITエンジニア職<br><small>SE/プログラマ/保守/インフラ…</small></span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="occupation" value="09"
+                            form="form_id02"><span>建築・土木技術職<br><small>施工管理/設備管理/設計/積算</small></span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="occupation" value="10"
+                            form="form_id02"><span>技術専門職<br><small>化学/機械/食品/他メーカー…</small></span></label></div>
+                      <div class="label_wrap"><label><input type="radio" name="occupation" value="11"
+                            form="form_id02"><span>金融系専門職<br><small>ディーラー/保険専門職/M&amp;A…</small></span></label></div>
+                    </div>
+                    <div class="button_wrap">
+                      <button type="button" class="prev">戻る</button>
+                      <button type="submit" class="search_start" form="form_id02">結果画面へ</button>
+                    </div>
+                  </div>
+                  <!--Question4-->
+                </div>
               </div>
-              <div class="step_title"><span>Q1.</span> 現在のご年齢は？</div>
-
-              <div class="step_body">
-                <div class="step radios_wrap not_last open sp_column3" data-title="現在のご年齢は？">
-                  <div class="wrapper">
-                    <div class="label_wrap"><label><input type="radio" name="age" value="00"
-                          form="form_id02"><span>指定なし</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="age" value="20"
-                          form="form_id02"><span>～24歳</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="age" value="25"
-                          form="form_id02"><span>25～29歳</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="age" value="30"
-                          form="form_id02"><span>30～39歳</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="age" value="40"
-                          form="form_id02"><span>40～49歳</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="age" value="50"
-                          form="form_id02"><span>50～59歳</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="age" value="60"
-                          form="form_id02"><span>60歳～</span></label></div>
-                  </div>
-                </div>
-                <!--Question1-->
-
-                <div class="step radios_wrap not_last column2" data-title="現在の状況は？">
-                  <div class="wrapper">
-                    <div class="label_wrap"><label><input type="radio" name="status" value="00"
-                          form="form_id02"><span>指定なし</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="status" value="01"
-                          form="form_id02"><span>正社員</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="status" value="02"
-                          form="form_id02"><span>契約社員</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="status" value="03"
-                          form="form_id02"><span>派遣社員</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="status" value="04"
-                          form="form_id02"><span>バイト・パート</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="status" value="05"
-                          form="form_id02"><span>無職</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="status" value="06"
-                          form="form_id02"><span>学生</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="status" value="07"
-                          form="form_id02"><span>その他</span></label></div>
-                  </div>
-                  <div class="button_wrap">
-                    <button type="button" class="prev">戻る</button>
-                  </div>
-                </div>
-                <!--Question2-->
-
-                <div class="step radios_wrap not_last column2" data-title="現在のご年収は？">
-                  <div class="wrapper">
-                    <div class="label_wrap"><label><input type="radio" name="income" value="00"
-                          form="form_id02"><span>指定なし</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="income" value="01"
-                          form="form_id02"><span>～299万円</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="income" value="02"
-                          form="form_id02"><span>300～399万円</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="income" value="03"
-                          form="form_id02"><span>400～499万円</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="income" value="04"
-                          form="form_id02"><span>500～599万円</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="income" value="05"
-                          form="form_id02"><span>600～699万円</span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="income" value="06"
-                          form="form_id02"><span>700万円～</span></label></div>
-                  </div>
-                  <div class="button_wrap">
-                    <button type="button" class="prev">戻る</button>
-                  </div>
-                </div>
-                <!--Question3-->
-
-                <div class="step radios_wrap column2 touch_submit" data-title="ご希望の職種は？">
-                  <div class="wrapper">
-                    <div class="label_wrap"><label><input type="radio" name="occupation" value="01"
-                          form="form_id02"><span>営業・セールス・CS<br><small>営業職/カスタマーサポート…</small></span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="occupation" value="02"
-                          form="form_id02"><span>企画・マーケ・経営<br><small>広告/宣伝/販促/営業企画…</small></span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="occupation" value="03"
-                          form="form_id02"><span>管理<br><small>会計/財務/法務/広報/人事…</small></span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="occupation" value="04"
-                          form="form_id02"><span>事務・アシスタント<br><small>営業事務/データ入力/秘書…</small></span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="occupation" value="05"
-                          form="form_id02"><span>販売・サービス<br><small>接客/販売/店舗運営/運輸…</small></span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="occupation" value="06"
-                          form="form_id02"><span>コンサルタント<br><small>経営/戦略/アナリスト…</small></span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="occupation" value="07"
-                          form="form_id02"><span>クリエイティブ職<br><small>デザイナー/ディレクター/編集…</small></span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="occupation" value="08"
-                          form="form_id02"><span>ITエンジニア職<br><small>SE/プログラマ/保守/インフラ…</small></span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="occupation" value="09"
-                          form="form_id02"><span>建築・土木技術職<br><small>施工管理/設備管理/設計/積算</small></span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="occupation" value="10"
-                          form="form_id02"><span>技術専門職<br><small>化学/機械/食品/他メーカー…</small></span></label></div>
-                    <div class="label_wrap"><label><input type="radio" name="occupation" value="11"
-                          form="form_id02"><span>金融系専門職<br><small>ディーラー/保険専門職/M&amp;A…</small></span></label></div>
-                  </div>
-                  <div class="button_wrap">
-                    <button type="button" class="prev">戻る</button>
-                    <button type="submit" class="search_start" form="form_id02">結果画面へ</button>
-                  </div>
-                </div>
-                <!--Question4-->
+            </form>
+          </div>
+        
+          <div class="pages">
+            <ul class="list">
+              <li><a href="#" class="link">
+                  <i><img src="images/ico_page_20.svg" alt=""></i>
+                  <span class="title">20代</span>
+                  <span class="text">転職ランキング</span>
+                </a></li>
+              <li><a href="#" class="link">
+                  <i><img src="images/ico_page_30.svg" alt=""></i>
+                  <span class="title">30代</span>
+                  <span class="text">転職ランキング</span>
+                </a></li>
+              <li><a href="#" class="link">
+                  <i><img src="images/ico_page_40.svg" alt=""></i>
+                  <span class="title">40代</span>
+                  <span class="text">転職ランキング</span>
+                </a></li>
+              <li><a href="#" class="link">
+                  <i><img src="images/ico_page_50.svg" alt=""></i>
+                  <span class="title">50代</span>
+                  <span class="text">転職ランキング</span>
+                </a></li>
+              <li><a href="#" class="link">
+                  <i><img src="images/ico_page_it.svg" alt=""></i>
+                  <span class="title">IT・WEB職種</span>
+                  <span class="text">転職ランキング</span>
+                </a></li>
+              <li><a href="#" class="link">
+                  <i><img src="images/ico_page_highclass.svg" alt=""></i>
+                  <span class="title">ハイクラス</span>
+                  <span class="text">転職ランキング</span>
+                </a></li>
+            </ul>
+            <a href="#" class="link -full">
+              <i><img src="images/ico_page_star.svg" alt=""></i>
+              <div class="texts">
+                <span class="title">24歳以下・第二新卒・フリーター</span>
+                <span class="text">転職ランキング</span>
               </div>
-            </div>
-          </form>
-        </div>
-
-        <div class="pages">
-          <ul class="list">
-            <li><a href="#" class="link">
-                <i><img src="images/ico_page_20.svg" alt=""></i>
-                <span class="title">20代</span>
-                <span class="text">転職ランキング</span>
-              </a></li>
-            <li><a href="#" class="link">
-                <i><img src="images/ico_page_30.svg" alt=""></i>
-                <span class="title">30代</span>
-                <span class="text">転職ランキング</span>
-              </a></li>
-            <li><a href="#" class="link">
-                <i><img src="images/ico_page_40.svg" alt=""></i>
-                <span class="title">40代</span>
-                <span class="text">転職ランキング</span>
-              </a></li>
-            <li><a href="#" class="link">
-                <i><img src="images/ico_page_50.svg" alt=""></i>
-                <span class="title">50代</span>
-                <span class="text">転職ランキング</span>
-              </a></li>
-            <li><a href="#" class="link">
-                <i><img src="images/ico_page_it.svg" alt=""></i>
-                <span class="title">IT・WEB職種</span>
-                <span class="text">転職ランキング</span>
-              </a></li>
-            <li><a href="#" class="link">
-                <i><img src="images/ico_page_highclass.svg" alt=""></i>
-                <span class="title">ハイクラス</span>
-                <span class="text">転職ランキング</span>
-              </a></li>
-          </ul>
-          <a href="#" class="link -full">
-            <i><img src="images/ico_page_star.svg" alt=""></i>
-            <div class="texts">
-              <span class="title">24歳以下・第二新卒・フリーター</span>
-              <span class="text">転職ランキング</span>
-            </div>
-          </a>
-        </div>
-      </section>
+            </a>
+          </div>
+        </div>      </section>
 
       <section class="compare">
         <div class="SectionTitle">
@@ -261,277 +262,277 @@
           </p>
           <h2 class="SectionTitle_title">人気の転職サイト5社比較</h2>
         </div>
-
-        <table>
-          <tr>
-            <th>転職サービス</th>
-            <th>総合評価</th>
-            <th>求人数</th>
-            <th>特徴</th>
-          </tr>
-          <tr>
-            <td>
-              <div class="info">
-                <div class="ranking">
-                  <img src="images/ico_crown_gold.svg" alt="">
-                  <span class="text">No.1</span>
+        <div class="CompareTable">
+          <table>
+            <tr>
+              <th>転職サービス</th>
+              <th>総合評価</th>
+              <th>求人数</th>
+              <th>特徴</th>
+            </tr>
+            <tr>
+              <td>
+                <div class="info">
+                  <div class="ranking">
+                    <img src="images/ico_crown_gold.svg" alt="">
+                    <span class="text">No.1</span>
+                  </div>
+                  <figure class="logo">
+                    <img src="images/logo/bizreach_small.png" alt="">
+                  </figure>
+                  <p class="text">
+                    利用満足度No.1<br>
+                    年収500万円以上に◎
+                  </p>
+                  <a href="#" class="Button Button-small">
+                    公式サイト
+                  </a>
                 </div>
-                <figure class="logo">
-                  <img src="images/logo/bizreach_small.png" alt="">
-                </figure>
-                <p class="text">
-                  利用満足度No.1<br>
-                  年収500万円以上に◎
-                </p>
-                <a href="#" class="Button Button-small">
-                  公式サイト
-                </a>
-              </div>
-            </td>
-            <td>
-              <p class="rate js-rate">4.8</p>
-              <svg class="rating" xmlns="http://www.w3.org/2000/svg" width="58" height="38" viewBox="0 0 58 38" fill="none">
-                <path class="star" data-index="1"
-                  d="M9.95106 1.30902C9.6517 0.387702 8.34829 0.387711 8.04894 1.30902L8.52447 1.46353L8.04894 1.30902L6.6161 5.71885H1.97933C1.01061 5.71885 0.607835 6.95846 1.39155 7.52786L5.14277 10.2533L3.70993 14.6631C3.41058 15.5844 4.46506 16.3506 5.24877 15.7812L9 13.0557L12.7512 15.7812C13.5349 16.3506 14.5894 15.5844 14.2901 14.6631L12.8572 10.2533L16.6085 7.52786C17.3922 6.95846 16.9894 5.71885 16.0207 5.71885L11.3839 5.71885L9.95106 1.30902Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="2"
-                  d="M29.9511 1.30902C29.6517 0.387702 28.3483 0.387711 28.0489 1.30902L28.5245 1.46353L28.0489 1.30902L26.6161 5.71885H21.9793C21.0106 5.71885 20.6078 6.95846 21.3915 7.52786L25.1428 10.2533L23.7099 14.6631C23.4106 15.5844 24.4651 16.3506 25.2488 15.7812L29 13.0557L32.7512 15.7812C33.5349 16.3506 34.5894 15.5844 34.2901 14.6631L32.8572 10.2533L36.6085 7.52786C37.3922 6.95846 36.9894 5.71885 36.0207 5.71885L31.3839 5.71885L29.9511 1.30902Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="3"
-                  d="M49.9511 1.30902C49.6517 0.387702 48.3483 0.387711 48.0489 1.30902L48.5245 1.46353L48.0489 1.30902L46.6161 5.71885H41.9793C41.0106 5.71885 40.6078 6.95846 41.3915 7.52786L45.1428 10.2533L43.7099 14.6631C43.4106 15.5844 44.4651 16.3506 45.2488 15.7812L49 13.0557L52.7512 15.7812C53.5349 16.3506 54.5894 15.5844 54.2901 14.6631L52.8572 10.2533L56.6085 7.52786C57.3922 6.95846 56.9894 5.71885 56.0207 5.71885L51.3839 5.71885L49.9511 1.30902Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="4"
-                  d="M19.9511 21.309C19.6517 20.3877 18.3483 20.3877 18.0489 21.309L18.5245 21.4635L18.0489 21.309L16.6161 25.7188H11.9793C11.0106 25.7188 10.6078 26.9585 11.3915 27.5279L15.1428 30.2533L13.7099 34.6631C13.4106 35.5844 14.4651 36.3506 15.2488 35.7812L19 33.0557L22.7512 35.7812C23.5349 36.3506 24.5894 35.5844 24.2901 34.6631L22.8572 30.2533L26.6085 27.5279C27.3922 26.9585 26.9894 25.7188 26.0207 25.7188L21.3839 25.7188L19.9511 21.309Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="5"
-                  d="M39.9511 21.309C39.6517 20.3877 38.3483 20.3877 38.0489 21.309L38.5245 21.4635L38.0489 21.309L36.6161 25.7188H31.9793C31.0106 25.7188 30.6078 26.9585 31.3915 27.5279L35.1428 30.2533L33.7099 34.6631C33.4106 35.5844 34.4651 36.3506 35.2488 35.7812L39 33.0557L42.7512 35.7812C43.5349 36.3506 44.5894 35.5844 44.2901 34.6631L42.8572 30.2533L46.6085 27.5279C47.3922 26.9585 46.9894 25.7188 46.0207 25.7188L41.3839 25.7188L39.9511 21.309Z"
-                  stroke="#F0F0F0" />
-              </svg>            </td>
-            <td>
-              <div class="amount">
-                <p class="text"><b>13.2</b>万件</p>
-                <img class="evaluation" src="images/ico_compare_circle_double.svg" alt="">
-              </div>
-            </td>
-            <td>
-              <div class="detail">
-                <p class="text"><span class="Highlight">年収500万以上</span>は登録必須！<br>
-                  <span class="Highlight">利用満足度No.1</span>のハイクラス転職サービス
-                </p>
-                <a class="link">もっと詳しく</a>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="info">
-                <div class="ranking">
-                  <span class="text">No.2</span>
+              </td>
+              <td>
+                <p class="rate js-rate">4.8</p>
+                <svg class="rating" xmlns="http://www.w3.org/2000/svg" width="58" height="38" viewBox="0 0 58 38" fill="none">
+                  <path class="star" data-index="1"
+                    d="M9.95106 1.30902C9.6517 0.387702 8.34829 0.387711 8.04894 1.30902L8.52447 1.46353L8.04894 1.30902L6.6161 5.71885H1.97933C1.01061 5.71885 0.607835 6.95846 1.39155 7.52786L5.14277 10.2533L3.70993 14.6631C3.41058 15.5844 4.46506 16.3506 5.24877 15.7812L9 13.0557L12.7512 15.7812C13.5349 16.3506 14.5894 15.5844 14.2901 14.6631L12.8572 10.2533L16.6085 7.52786C17.3922 6.95846 16.9894 5.71885 16.0207 5.71885L11.3839 5.71885L9.95106 1.30902Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="2"
+                    d="M29.9511 1.30902C29.6517 0.387702 28.3483 0.387711 28.0489 1.30902L28.5245 1.46353L28.0489 1.30902L26.6161 5.71885H21.9793C21.0106 5.71885 20.6078 6.95846 21.3915 7.52786L25.1428 10.2533L23.7099 14.6631C23.4106 15.5844 24.4651 16.3506 25.2488 15.7812L29 13.0557L32.7512 15.7812C33.5349 16.3506 34.5894 15.5844 34.2901 14.6631L32.8572 10.2533L36.6085 7.52786C37.3922 6.95846 36.9894 5.71885 36.0207 5.71885L31.3839 5.71885L29.9511 1.30902Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="3"
+                    d="M49.9511 1.30902C49.6517 0.387702 48.3483 0.387711 48.0489 1.30902L48.5245 1.46353L48.0489 1.30902L46.6161 5.71885H41.9793C41.0106 5.71885 40.6078 6.95846 41.3915 7.52786L45.1428 10.2533L43.7099 14.6631C43.4106 15.5844 44.4651 16.3506 45.2488 15.7812L49 13.0557L52.7512 15.7812C53.5349 16.3506 54.5894 15.5844 54.2901 14.6631L52.8572 10.2533L56.6085 7.52786C57.3922 6.95846 56.9894 5.71885 56.0207 5.71885L51.3839 5.71885L49.9511 1.30902Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="4"
+                    d="M19.9511 21.309C19.6517 20.3877 18.3483 20.3877 18.0489 21.309L18.5245 21.4635L18.0489 21.309L16.6161 25.7188H11.9793C11.0106 25.7188 10.6078 26.9585 11.3915 27.5279L15.1428 30.2533L13.7099 34.6631C13.4106 35.5844 14.4651 36.3506 15.2488 35.7812L19 33.0557L22.7512 35.7812C23.5349 36.3506 24.5894 35.5844 24.2901 34.6631L22.8572 30.2533L26.6085 27.5279C27.3922 26.9585 26.9894 25.7188 26.0207 25.7188L21.3839 25.7188L19.9511 21.309Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="5"
+                    d="M39.9511 21.309C39.6517 20.3877 38.3483 20.3877 38.0489 21.309L38.5245 21.4635L38.0489 21.309L36.6161 25.7188H31.9793C31.0106 25.7188 30.6078 26.9585 31.3915 27.5279L35.1428 30.2533L33.7099 34.6631C33.4106 35.5844 34.4651 36.3506 35.2488 35.7812L39 33.0557L42.7512 35.7812C43.5349 36.3506 44.5894 35.5844 44.2901 34.6631L42.8572 30.2533L46.6085 27.5279C47.3922 26.9585 46.9894 25.7188 46.0207 25.7188L41.3839 25.7188L39.9511 21.309Z"
+                    stroke="#F0F0F0" />
+                </svg>      </td>
+              <td>
+                <div class="amount">
+                  <p class="text"><b>13.2</b>万件</p>
+                  <img class="evaluation" src="images/ico_compare_circle_double.svg" alt="">
                 </div>
-                <figure class="logo">
-                  <img src="images/logo/recruit_agent_small.png" alt="">
-                </figure>
-                <p class="text">
-                  圧倒的求人数！<br>
-                  業種問わず登録必須
-                </p>
-                <a href="#" class="Button Button-small">
-                  公式サイト
-                </a>
-              </div>
-            </td>
-            <td>
-              <p class="rate js-rate">4.5</p>
-              <svg class="rating" xmlns="http://www.w3.org/2000/svg" width="58" height="38" viewBox="0 0 58 38" fill="none">
-                <path class="star" data-index="1"
-                  d="M9.95106 1.30902C9.6517 0.387702 8.34829 0.387711 8.04894 1.30902L8.52447 1.46353L8.04894 1.30902L6.6161 5.71885H1.97933C1.01061 5.71885 0.607835 6.95846 1.39155 7.52786L5.14277 10.2533L3.70993 14.6631C3.41058 15.5844 4.46506 16.3506 5.24877 15.7812L9 13.0557L12.7512 15.7812C13.5349 16.3506 14.5894 15.5844 14.2901 14.6631L12.8572 10.2533L16.6085 7.52786C17.3922 6.95846 16.9894 5.71885 16.0207 5.71885L11.3839 5.71885L9.95106 1.30902Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="2"
-                  d="M29.9511 1.30902C29.6517 0.387702 28.3483 0.387711 28.0489 1.30902L28.5245 1.46353L28.0489 1.30902L26.6161 5.71885H21.9793C21.0106 5.71885 20.6078 6.95846 21.3915 7.52786L25.1428 10.2533L23.7099 14.6631C23.4106 15.5844 24.4651 16.3506 25.2488 15.7812L29 13.0557L32.7512 15.7812C33.5349 16.3506 34.5894 15.5844 34.2901 14.6631L32.8572 10.2533L36.6085 7.52786C37.3922 6.95846 36.9894 5.71885 36.0207 5.71885L31.3839 5.71885L29.9511 1.30902Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="3"
-                  d="M49.9511 1.30902C49.6517 0.387702 48.3483 0.387711 48.0489 1.30902L48.5245 1.46353L48.0489 1.30902L46.6161 5.71885H41.9793C41.0106 5.71885 40.6078 6.95846 41.3915 7.52786L45.1428 10.2533L43.7099 14.6631C43.4106 15.5844 44.4651 16.3506 45.2488 15.7812L49 13.0557L52.7512 15.7812C53.5349 16.3506 54.5894 15.5844 54.2901 14.6631L52.8572 10.2533L56.6085 7.52786C57.3922 6.95846 56.9894 5.71885 56.0207 5.71885L51.3839 5.71885L49.9511 1.30902Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="4"
-                  d="M19.9511 21.309C19.6517 20.3877 18.3483 20.3877 18.0489 21.309L18.5245 21.4635L18.0489 21.309L16.6161 25.7188H11.9793C11.0106 25.7188 10.6078 26.9585 11.3915 27.5279L15.1428 30.2533L13.7099 34.6631C13.4106 35.5844 14.4651 36.3506 15.2488 35.7812L19 33.0557L22.7512 35.7812C23.5349 36.3506 24.5894 35.5844 24.2901 34.6631L22.8572 30.2533L26.6085 27.5279C27.3922 26.9585 26.9894 25.7188 26.0207 25.7188L21.3839 25.7188L19.9511 21.309Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="5"
-                  d="M39.9511 21.309C39.6517 20.3877 38.3483 20.3877 38.0489 21.309L38.5245 21.4635L38.0489 21.309L36.6161 25.7188H31.9793C31.0106 25.7188 30.6078 26.9585 31.3915 27.5279L35.1428 30.2533L33.7099 34.6631C33.4106 35.5844 34.4651 36.3506 35.2488 35.7812L39 33.0557L42.7512 35.7812C43.5349 36.3506 44.5894 35.5844 44.2901 34.6631L42.8572 30.2533L46.6085 27.5279C47.3922 26.9585 46.9894 25.7188 46.0207 25.7188L41.3839 25.7188L39.9511 21.309Z"
-                  stroke="#F0F0F0" />
-              </svg>            </td>
-            <td>
-              <div class="amount">
-                <p class="text"><b>36</b>万件</p>
-                <img class="evaluation" src="images/ico_compare_circle_double.svg" alt="">
-              </div>
-            </td>
-            <td>
-              <div class="detail">
-                <p class="text">
-                  転職といえばリクルート！<br><span class="Highlight">転職支援実績No.1</span>の最大手転職エージェント
-                </p>
-                <a class="link">もっと詳しく</a>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="info">
-                <div class="ranking">
-                  <span class="text">No.3</span>
+              </td>
+              <td>
+                <div class="detail">
+                  <p class="text"><span class="Highlight">年収500万以上</span>は登録必須！<br>
+                    <span class="Highlight">利用満足度No.1</span>のハイクラス転職サービス
+                  </p>
+                  <a class="link">もっと詳しく</a>
                 </div>
-                <figure class="logo">
-                  <img src="images/logo/doda_small.png" alt="">
-                </figure>
-                <p class="text">
-                  利用満足度No.1※<br>
-                  好条件の独占求人多数
-                </p>
-                <a href="#" class="Button Button-small">
-                  公式サイト
-                </a>
-              </div>
-            </td>
-            <td>
-              <p class="rate js-rate">4.0</p>
-              <svg class="rating" xmlns="http://www.w3.org/2000/svg" width="58" height="38" viewBox="0 0 58 38" fill="none">
-                <path class="star" data-index="1"
-                  d="M9.95106 1.30902C9.6517 0.387702 8.34829 0.387711 8.04894 1.30902L8.52447 1.46353L8.04894 1.30902L6.6161 5.71885H1.97933C1.01061 5.71885 0.607835 6.95846 1.39155 7.52786L5.14277 10.2533L3.70993 14.6631C3.41058 15.5844 4.46506 16.3506 5.24877 15.7812L9 13.0557L12.7512 15.7812C13.5349 16.3506 14.5894 15.5844 14.2901 14.6631L12.8572 10.2533L16.6085 7.52786C17.3922 6.95846 16.9894 5.71885 16.0207 5.71885L11.3839 5.71885L9.95106 1.30902Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="2"
-                  d="M29.9511 1.30902C29.6517 0.387702 28.3483 0.387711 28.0489 1.30902L28.5245 1.46353L28.0489 1.30902L26.6161 5.71885H21.9793C21.0106 5.71885 20.6078 6.95846 21.3915 7.52786L25.1428 10.2533L23.7099 14.6631C23.4106 15.5844 24.4651 16.3506 25.2488 15.7812L29 13.0557L32.7512 15.7812C33.5349 16.3506 34.5894 15.5844 34.2901 14.6631L32.8572 10.2533L36.6085 7.52786C37.3922 6.95846 36.9894 5.71885 36.0207 5.71885L31.3839 5.71885L29.9511 1.30902Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="3"
-                  d="M49.9511 1.30902C49.6517 0.387702 48.3483 0.387711 48.0489 1.30902L48.5245 1.46353L48.0489 1.30902L46.6161 5.71885H41.9793C41.0106 5.71885 40.6078 6.95846 41.3915 7.52786L45.1428 10.2533L43.7099 14.6631C43.4106 15.5844 44.4651 16.3506 45.2488 15.7812L49 13.0557L52.7512 15.7812C53.5349 16.3506 54.5894 15.5844 54.2901 14.6631L52.8572 10.2533L56.6085 7.52786C57.3922 6.95846 56.9894 5.71885 56.0207 5.71885L51.3839 5.71885L49.9511 1.30902Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="4"
-                  d="M19.9511 21.309C19.6517 20.3877 18.3483 20.3877 18.0489 21.309L18.5245 21.4635L18.0489 21.309L16.6161 25.7188H11.9793C11.0106 25.7188 10.6078 26.9585 11.3915 27.5279L15.1428 30.2533L13.7099 34.6631C13.4106 35.5844 14.4651 36.3506 15.2488 35.7812L19 33.0557L22.7512 35.7812C23.5349 36.3506 24.5894 35.5844 24.2901 34.6631L22.8572 30.2533L26.6085 27.5279C27.3922 26.9585 26.9894 25.7188 26.0207 25.7188L21.3839 25.7188L19.9511 21.309Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="5"
-                  d="M39.9511 21.309C39.6517 20.3877 38.3483 20.3877 38.0489 21.309L38.5245 21.4635L38.0489 21.309L36.6161 25.7188H31.9793C31.0106 25.7188 30.6078 26.9585 31.3915 27.5279L35.1428 30.2533L33.7099 34.6631C33.4106 35.5844 34.4651 36.3506 35.2488 35.7812L39 33.0557L42.7512 35.7812C43.5349 36.3506 44.5894 35.5844 44.2901 34.6631L42.8572 30.2533L46.6085 27.5279C47.3922 26.9585 46.9894 25.7188 46.0207 25.7188L41.3839 25.7188L39.9511 21.309Z"
-                  stroke="#F0F0F0" />
-              </svg>            </td>
-            <td>
-              <div class="amount">
-                <p class="text"><b>20</b>万件</p>
-                <img class="evaluation" src="images/ico_compare_circle_double.svg" alt="">
-              </div>
-            </td>
-            <td>
-              <div class="detail">
-                <p class="text">
-                  <span class="Highlight">転職者利用満足度No.1</span>を獲得！<sup>※</sup><br>全職種の求人に強い大手転職エージェント
-                </p>
-                <a class="link">もっと詳しく</a>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="info">
-                <div class="ranking">
-                  <span class="text">No.4</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="info">
+                  <div class="ranking">
+                    <span class="text">No.2</span>
+                  </div>
+                  <figure class="logo">
+                    <img src="images/logo/recruit_agent_small.png" alt="">
+                  </figure>
+                  <p class="text">
+                    圧倒的求人数！<br>
+                    業種問わず登録必須
+                  </p>
+                  <a href="#" class="Button Button-small">
+                    公式サイト
+                  </a>
                 </div>
-                <figure class="logo">
-                  <img src="images/logo/mynavi_agent_small.png" alt="">
-                </figure>
-                <p class="text">
-                  丁寧なサポートで評判<br>
-                  独自求人も多数！
-                </p>
-                <a href="#" class="Button Button-small">
-                  公式サイト
-                </a>
-              </div>
-            </td>
-            <td>
-              <p class="rate js-rate">3.7</p>
-              <svg class="rating" xmlns="http://www.w3.org/2000/svg" width="58" height="38" viewBox="0 0 58 38" fill="none">
-                <path class="star" data-index="1"
-                  d="M9.95106 1.30902C9.6517 0.387702 8.34829 0.387711 8.04894 1.30902L8.52447 1.46353L8.04894 1.30902L6.6161 5.71885H1.97933C1.01061 5.71885 0.607835 6.95846 1.39155 7.52786L5.14277 10.2533L3.70993 14.6631C3.41058 15.5844 4.46506 16.3506 5.24877 15.7812L9 13.0557L12.7512 15.7812C13.5349 16.3506 14.5894 15.5844 14.2901 14.6631L12.8572 10.2533L16.6085 7.52786C17.3922 6.95846 16.9894 5.71885 16.0207 5.71885L11.3839 5.71885L9.95106 1.30902Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="2"
-                  d="M29.9511 1.30902C29.6517 0.387702 28.3483 0.387711 28.0489 1.30902L28.5245 1.46353L28.0489 1.30902L26.6161 5.71885H21.9793C21.0106 5.71885 20.6078 6.95846 21.3915 7.52786L25.1428 10.2533L23.7099 14.6631C23.4106 15.5844 24.4651 16.3506 25.2488 15.7812L29 13.0557L32.7512 15.7812C33.5349 16.3506 34.5894 15.5844 34.2901 14.6631L32.8572 10.2533L36.6085 7.52786C37.3922 6.95846 36.9894 5.71885 36.0207 5.71885L31.3839 5.71885L29.9511 1.30902Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="3"
-                  d="M49.9511 1.30902C49.6517 0.387702 48.3483 0.387711 48.0489 1.30902L48.5245 1.46353L48.0489 1.30902L46.6161 5.71885H41.9793C41.0106 5.71885 40.6078 6.95846 41.3915 7.52786L45.1428 10.2533L43.7099 14.6631C43.4106 15.5844 44.4651 16.3506 45.2488 15.7812L49 13.0557L52.7512 15.7812C53.5349 16.3506 54.5894 15.5844 54.2901 14.6631L52.8572 10.2533L56.6085 7.52786C57.3922 6.95846 56.9894 5.71885 56.0207 5.71885L51.3839 5.71885L49.9511 1.30902Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="4"
-                  d="M19.9511 21.309C19.6517 20.3877 18.3483 20.3877 18.0489 21.309L18.5245 21.4635L18.0489 21.309L16.6161 25.7188H11.9793C11.0106 25.7188 10.6078 26.9585 11.3915 27.5279L15.1428 30.2533L13.7099 34.6631C13.4106 35.5844 14.4651 36.3506 15.2488 35.7812L19 33.0557L22.7512 35.7812C23.5349 36.3506 24.5894 35.5844 24.2901 34.6631L22.8572 30.2533L26.6085 27.5279C27.3922 26.9585 26.9894 25.7188 26.0207 25.7188L21.3839 25.7188L19.9511 21.309Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="5"
-                  d="M39.9511 21.309C39.6517 20.3877 38.3483 20.3877 38.0489 21.309L38.5245 21.4635L38.0489 21.309L36.6161 25.7188H31.9793C31.0106 25.7188 30.6078 26.9585 31.3915 27.5279L35.1428 30.2533L33.7099 34.6631C33.4106 35.5844 34.4651 36.3506 35.2488 35.7812L39 33.0557L42.7512 35.7812C43.5349 36.3506 44.5894 35.5844 44.2901 34.6631L42.8572 30.2533L46.6085 27.5279C47.3922 26.9585 46.9894 25.7188 46.0207 25.7188L41.3839 25.7188L39.9511 21.309Z"
-                  stroke="#F0F0F0" />
-              </svg>            </td>
-            <td>
-              <div class="amount">
-                <p class="text">非公開</p>
-                <img class="evaluation -empty" src="images/ico_compare_line.svg" alt="">
-              </div>
-            </td>
-            <td>
-              <div class="detail">
-                <p class="text">
-                  他社にはない<span class="Highlight">求人マッチング力</span>！若手からミドル層まで幅広い人気をもつ大手転職エージェント
-                </p>
-                <a class="link">もっと詳しく</a>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="info">
-                <div class="ranking">
-                  <span class="text">No.5</span>
+              </td>
+              <td>
+                <p class="rate js-rate">4.5</p>
+                <svg class="rating" xmlns="http://www.w3.org/2000/svg" width="58" height="38" viewBox="0 0 58 38" fill="none">
+                  <path class="star" data-index="1"
+                    d="M9.95106 1.30902C9.6517 0.387702 8.34829 0.387711 8.04894 1.30902L8.52447 1.46353L8.04894 1.30902L6.6161 5.71885H1.97933C1.01061 5.71885 0.607835 6.95846 1.39155 7.52786L5.14277 10.2533L3.70993 14.6631C3.41058 15.5844 4.46506 16.3506 5.24877 15.7812L9 13.0557L12.7512 15.7812C13.5349 16.3506 14.5894 15.5844 14.2901 14.6631L12.8572 10.2533L16.6085 7.52786C17.3922 6.95846 16.9894 5.71885 16.0207 5.71885L11.3839 5.71885L9.95106 1.30902Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="2"
+                    d="M29.9511 1.30902C29.6517 0.387702 28.3483 0.387711 28.0489 1.30902L28.5245 1.46353L28.0489 1.30902L26.6161 5.71885H21.9793C21.0106 5.71885 20.6078 6.95846 21.3915 7.52786L25.1428 10.2533L23.7099 14.6631C23.4106 15.5844 24.4651 16.3506 25.2488 15.7812L29 13.0557L32.7512 15.7812C33.5349 16.3506 34.5894 15.5844 34.2901 14.6631L32.8572 10.2533L36.6085 7.52786C37.3922 6.95846 36.9894 5.71885 36.0207 5.71885L31.3839 5.71885L29.9511 1.30902Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="3"
+                    d="M49.9511 1.30902C49.6517 0.387702 48.3483 0.387711 48.0489 1.30902L48.5245 1.46353L48.0489 1.30902L46.6161 5.71885H41.9793C41.0106 5.71885 40.6078 6.95846 41.3915 7.52786L45.1428 10.2533L43.7099 14.6631C43.4106 15.5844 44.4651 16.3506 45.2488 15.7812L49 13.0557L52.7512 15.7812C53.5349 16.3506 54.5894 15.5844 54.2901 14.6631L52.8572 10.2533L56.6085 7.52786C57.3922 6.95846 56.9894 5.71885 56.0207 5.71885L51.3839 5.71885L49.9511 1.30902Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="4"
+                    d="M19.9511 21.309C19.6517 20.3877 18.3483 20.3877 18.0489 21.309L18.5245 21.4635L18.0489 21.309L16.6161 25.7188H11.9793C11.0106 25.7188 10.6078 26.9585 11.3915 27.5279L15.1428 30.2533L13.7099 34.6631C13.4106 35.5844 14.4651 36.3506 15.2488 35.7812L19 33.0557L22.7512 35.7812C23.5349 36.3506 24.5894 35.5844 24.2901 34.6631L22.8572 30.2533L26.6085 27.5279C27.3922 26.9585 26.9894 25.7188 26.0207 25.7188L21.3839 25.7188L19.9511 21.309Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="5"
+                    d="M39.9511 21.309C39.6517 20.3877 38.3483 20.3877 38.0489 21.309L38.5245 21.4635L38.0489 21.309L36.6161 25.7188H31.9793C31.0106 25.7188 30.6078 26.9585 31.3915 27.5279L35.1428 30.2533L33.7099 34.6631C33.4106 35.5844 34.4651 36.3506 35.2488 35.7812L39 33.0557L42.7512 35.7812C43.5349 36.3506 44.5894 35.5844 44.2901 34.6631L42.8572 30.2533L46.6085 27.5279C47.3922 26.9585 46.9894 25.7188 46.0207 25.7188L41.3839 25.7188L39.9511 21.309Z"
+                    stroke="#F0F0F0" />
+                </svg>      </td>
+              <td>
+                <div class="amount">
+                  <p class="text"><b>36</b>万件</p>
+                  <img class="evaluation" src="images/ico_compare_circle_single.svg" alt="">
                 </div>
-                <figure class="logo">
-                  <img src="images/logo/hataractive.png" alt="">
-                </figure>
-                <p class="text">
-                  内定率80%超え<br>
-                  未経験層の転職に◎
-                </p>
-                <a href="#" class="Button Button-small">
-                  公式サイト
-                </a>
-              </div>
-            </td>
-            <td>
-              <p class="rate js-rate">3.4</p>
-              <svg class="rating" xmlns="http://www.w3.org/2000/svg" width="58" height="38" viewBox="0 0 58 38" fill="none">
-                <path class="star" data-index="1"
-                  d="M9.95106 1.30902C9.6517 0.387702 8.34829 0.387711 8.04894 1.30902L8.52447 1.46353L8.04894 1.30902L6.6161 5.71885H1.97933C1.01061 5.71885 0.607835 6.95846 1.39155 7.52786L5.14277 10.2533L3.70993 14.6631C3.41058 15.5844 4.46506 16.3506 5.24877 15.7812L9 13.0557L12.7512 15.7812C13.5349 16.3506 14.5894 15.5844 14.2901 14.6631L12.8572 10.2533L16.6085 7.52786C17.3922 6.95846 16.9894 5.71885 16.0207 5.71885L11.3839 5.71885L9.95106 1.30902Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="2"
-                  d="M29.9511 1.30902C29.6517 0.387702 28.3483 0.387711 28.0489 1.30902L28.5245 1.46353L28.0489 1.30902L26.6161 5.71885H21.9793C21.0106 5.71885 20.6078 6.95846 21.3915 7.52786L25.1428 10.2533L23.7099 14.6631C23.4106 15.5844 24.4651 16.3506 25.2488 15.7812L29 13.0557L32.7512 15.7812C33.5349 16.3506 34.5894 15.5844 34.2901 14.6631L32.8572 10.2533L36.6085 7.52786C37.3922 6.95846 36.9894 5.71885 36.0207 5.71885L31.3839 5.71885L29.9511 1.30902Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="3"
-                  d="M49.9511 1.30902C49.6517 0.387702 48.3483 0.387711 48.0489 1.30902L48.5245 1.46353L48.0489 1.30902L46.6161 5.71885H41.9793C41.0106 5.71885 40.6078 6.95846 41.3915 7.52786L45.1428 10.2533L43.7099 14.6631C43.4106 15.5844 44.4651 16.3506 45.2488 15.7812L49 13.0557L52.7512 15.7812C53.5349 16.3506 54.5894 15.5844 54.2901 14.6631L52.8572 10.2533L56.6085 7.52786C57.3922 6.95846 56.9894 5.71885 56.0207 5.71885L51.3839 5.71885L49.9511 1.30902Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="4"
-                  d="M19.9511 21.309C19.6517 20.3877 18.3483 20.3877 18.0489 21.309L18.5245 21.4635L18.0489 21.309L16.6161 25.7188H11.9793C11.0106 25.7188 10.6078 26.9585 11.3915 27.5279L15.1428 30.2533L13.7099 34.6631C13.4106 35.5844 14.4651 36.3506 15.2488 35.7812L19 33.0557L22.7512 35.7812C23.5349 36.3506 24.5894 35.5844 24.2901 34.6631L22.8572 30.2533L26.6085 27.5279C27.3922 26.9585 26.9894 25.7188 26.0207 25.7188L21.3839 25.7188L19.9511 21.309Z"
-                  stroke="#F0F0F0" />
-                <path class="star" data-index="5"
-                  d="M39.9511 21.309C39.6517 20.3877 38.3483 20.3877 38.0489 21.309L38.5245 21.4635L38.0489 21.309L36.6161 25.7188H31.9793C31.0106 25.7188 30.6078 26.9585 31.3915 27.5279L35.1428 30.2533L33.7099 34.6631C33.4106 35.5844 34.4651 36.3506 35.2488 35.7812L39 33.0557L42.7512 35.7812C43.5349 36.3506 44.5894 35.5844 44.2901 34.6631L42.8572 30.2533L46.6085 27.5279C47.3922 26.9585 46.9894 25.7188 46.0207 25.7188L41.3839 25.7188L39.9511 21.309Z"
-                  stroke="#F0F0F0" />
-              </svg>            </td>
-            <td>
-              <div class="amount">
-                <p class="text">非公開</p>
-                <img class="evaluation -empty" src="images/ico_compare_line.svg" alt="">
-              </div>
-            </td>
-            <td>
-              <div class="detail">
-                <p class="text">
-                  最短2週間で内定も！<br><span class="Highlight">未経験職種への就職に強み</span>を持つ大手就職支援サービス。
-                </p>
-                <a class="link">もっと詳しく</a>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </section>
+              </td>
+              <td>
+                <div class="detail">
+                  <p class="text">
+                    転職といえばリクルート！<br><span class="Highlight">転職支援実績No.1</span>の最大手転職エージェント
+                  </p>
+                  <a class="link">もっと詳しく</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="info">
+                  <div class="ranking">
+                    <span class="text">No.3</span>
+                  </div>
+                  <figure class="logo">
+                    <img src="images/logo/doda_small.png" alt="">
+                  </figure>
+                  <p class="text">
+                    利用満足度No.1※<br>
+                    好条件の独占求人多数
+                  </p>
+                  <a href="#" class="Button Button-small">
+                    公式サイト
+                  </a>
+                </div>
+              </td>
+              <td>
+                <p class="rate js-rate">4.0</p>
+                <svg class="rating" xmlns="http://www.w3.org/2000/svg" width="58" height="38" viewBox="0 0 58 38" fill="none">
+                  <path class="star" data-index="1"
+                    d="M9.95106 1.30902C9.6517 0.387702 8.34829 0.387711 8.04894 1.30902L8.52447 1.46353L8.04894 1.30902L6.6161 5.71885H1.97933C1.01061 5.71885 0.607835 6.95846 1.39155 7.52786L5.14277 10.2533L3.70993 14.6631C3.41058 15.5844 4.46506 16.3506 5.24877 15.7812L9 13.0557L12.7512 15.7812C13.5349 16.3506 14.5894 15.5844 14.2901 14.6631L12.8572 10.2533L16.6085 7.52786C17.3922 6.95846 16.9894 5.71885 16.0207 5.71885L11.3839 5.71885L9.95106 1.30902Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="2"
+                    d="M29.9511 1.30902C29.6517 0.387702 28.3483 0.387711 28.0489 1.30902L28.5245 1.46353L28.0489 1.30902L26.6161 5.71885H21.9793C21.0106 5.71885 20.6078 6.95846 21.3915 7.52786L25.1428 10.2533L23.7099 14.6631C23.4106 15.5844 24.4651 16.3506 25.2488 15.7812L29 13.0557L32.7512 15.7812C33.5349 16.3506 34.5894 15.5844 34.2901 14.6631L32.8572 10.2533L36.6085 7.52786C37.3922 6.95846 36.9894 5.71885 36.0207 5.71885L31.3839 5.71885L29.9511 1.30902Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="3"
+                    d="M49.9511 1.30902C49.6517 0.387702 48.3483 0.387711 48.0489 1.30902L48.5245 1.46353L48.0489 1.30902L46.6161 5.71885H41.9793C41.0106 5.71885 40.6078 6.95846 41.3915 7.52786L45.1428 10.2533L43.7099 14.6631C43.4106 15.5844 44.4651 16.3506 45.2488 15.7812L49 13.0557L52.7512 15.7812C53.5349 16.3506 54.5894 15.5844 54.2901 14.6631L52.8572 10.2533L56.6085 7.52786C57.3922 6.95846 56.9894 5.71885 56.0207 5.71885L51.3839 5.71885L49.9511 1.30902Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="4"
+                    d="M19.9511 21.309C19.6517 20.3877 18.3483 20.3877 18.0489 21.309L18.5245 21.4635L18.0489 21.309L16.6161 25.7188H11.9793C11.0106 25.7188 10.6078 26.9585 11.3915 27.5279L15.1428 30.2533L13.7099 34.6631C13.4106 35.5844 14.4651 36.3506 15.2488 35.7812L19 33.0557L22.7512 35.7812C23.5349 36.3506 24.5894 35.5844 24.2901 34.6631L22.8572 30.2533L26.6085 27.5279C27.3922 26.9585 26.9894 25.7188 26.0207 25.7188L21.3839 25.7188L19.9511 21.309Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="5"
+                    d="M39.9511 21.309C39.6517 20.3877 38.3483 20.3877 38.0489 21.309L38.5245 21.4635L38.0489 21.309L36.6161 25.7188H31.9793C31.0106 25.7188 30.6078 26.9585 31.3915 27.5279L35.1428 30.2533L33.7099 34.6631C33.4106 35.5844 34.4651 36.3506 35.2488 35.7812L39 33.0557L42.7512 35.7812C43.5349 36.3506 44.5894 35.5844 44.2901 34.6631L42.8572 30.2533L46.6085 27.5279C47.3922 26.9585 46.9894 25.7188 46.0207 25.7188L41.3839 25.7188L39.9511 21.309Z"
+                    stroke="#F0F0F0" />
+                </svg>      </td>
+              <td>
+                <div class="amount">
+                  <p class="text"><b>20</b>万件</p>
+                  <img class="evaluation" src="images/ico_compare_triangle.svg" alt="">
+                </div>
+              </td>
+              <td>
+                <div class="detail">
+                  <p class="text">
+                    <span class="Highlight">転職者利用満足度No.1</span>を獲得！<sup>※</sup><br>全職種の求人に強い大手転職エージェント
+                  </p>
+                  <a class="link">もっと詳しく</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="info">
+                  <div class="ranking">
+                    <span class="text">No.4</span>
+                  </div>
+                  <figure class="logo">
+                    <img src="images/logo/mynavi_agent_small.png" alt="">
+                  </figure>
+                  <p class="text">
+                    丁寧なサポートで評判<br>
+                    独自求人も多数！
+                  </p>
+                  <a href="#" class="Button Button-small">
+                    公式サイト
+                  </a>
+                </div>
+              </td>
+              <td>
+                <p class="rate js-rate">3.7</p>
+                <svg class="rating" xmlns="http://www.w3.org/2000/svg" width="58" height="38" viewBox="0 0 58 38" fill="none">
+                  <path class="star" data-index="1"
+                    d="M9.95106 1.30902C9.6517 0.387702 8.34829 0.387711 8.04894 1.30902L8.52447 1.46353L8.04894 1.30902L6.6161 5.71885H1.97933C1.01061 5.71885 0.607835 6.95846 1.39155 7.52786L5.14277 10.2533L3.70993 14.6631C3.41058 15.5844 4.46506 16.3506 5.24877 15.7812L9 13.0557L12.7512 15.7812C13.5349 16.3506 14.5894 15.5844 14.2901 14.6631L12.8572 10.2533L16.6085 7.52786C17.3922 6.95846 16.9894 5.71885 16.0207 5.71885L11.3839 5.71885L9.95106 1.30902Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="2"
+                    d="M29.9511 1.30902C29.6517 0.387702 28.3483 0.387711 28.0489 1.30902L28.5245 1.46353L28.0489 1.30902L26.6161 5.71885H21.9793C21.0106 5.71885 20.6078 6.95846 21.3915 7.52786L25.1428 10.2533L23.7099 14.6631C23.4106 15.5844 24.4651 16.3506 25.2488 15.7812L29 13.0557L32.7512 15.7812C33.5349 16.3506 34.5894 15.5844 34.2901 14.6631L32.8572 10.2533L36.6085 7.52786C37.3922 6.95846 36.9894 5.71885 36.0207 5.71885L31.3839 5.71885L29.9511 1.30902Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="3"
+                    d="M49.9511 1.30902C49.6517 0.387702 48.3483 0.387711 48.0489 1.30902L48.5245 1.46353L48.0489 1.30902L46.6161 5.71885H41.9793C41.0106 5.71885 40.6078 6.95846 41.3915 7.52786L45.1428 10.2533L43.7099 14.6631C43.4106 15.5844 44.4651 16.3506 45.2488 15.7812L49 13.0557L52.7512 15.7812C53.5349 16.3506 54.5894 15.5844 54.2901 14.6631L52.8572 10.2533L56.6085 7.52786C57.3922 6.95846 56.9894 5.71885 56.0207 5.71885L51.3839 5.71885L49.9511 1.30902Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="4"
+                    d="M19.9511 21.309C19.6517 20.3877 18.3483 20.3877 18.0489 21.309L18.5245 21.4635L18.0489 21.309L16.6161 25.7188H11.9793C11.0106 25.7188 10.6078 26.9585 11.3915 27.5279L15.1428 30.2533L13.7099 34.6631C13.4106 35.5844 14.4651 36.3506 15.2488 35.7812L19 33.0557L22.7512 35.7812C23.5349 36.3506 24.5894 35.5844 24.2901 34.6631L22.8572 30.2533L26.6085 27.5279C27.3922 26.9585 26.9894 25.7188 26.0207 25.7188L21.3839 25.7188L19.9511 21.309Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="5"
+                    d="M39.9511 21.309C39.6517 20.3877 38.3483 20.3877 38.0489 21.309L38.5245 21.4635L38.0489 21.309L36.6161 25.7188H31.9793C31.0106 25.7188 30.6078 26.9585 31.3915 27.5279L35.1428 30.2533L33.7099 34.6631C33.4106 35.5844 34.4651 36.3506 35.2488 35.7812L39 33.0557L42.7512 35.7812C43.5349 36.3506 44.5894 35.5844 44.2901 34.6631L42.8572 30.2533L46.6085 27.5279C47.3922 26.9585 46.9894 25.7188 46.0207 25.7188L41.3839 25.7188L39.9511 21.309Z"
+                    stroke="#F0F0F0" />
+                </svg>      </td>
+              <td>
+                <div class="amount">
+                  <p class="text">非公開</p>
+                  <img class="evaluation -empty" src="images/ico_compare_line.svg" alt="">
+                </div>
+              </td>
+              <td>
+                <div class="detail">
+                  <p class="text">
+                    他社にはない<span class="Highlight">求人マッチング力</span>！若手からミドル層まで幅広い人気をもつ大手転職エージェント
+                  </p>
+                  <a class="link">もっと詳しく</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="info">
+                  <div class="ranking">
+                    <span class="text">No.5</span>
+                  </div>
+                  <figure class="logo">
+                    <img src="images/logo/hataractive.png" alt="">
+                  </figure>
+                  <p class="text">
+                    内定率80%超え<br>
+                    未経験層の転職に◎
+                  </p>
+                  <a href="#" class="Button Button-small">
+                    公式サイト
+                  </a>
+                </div>
+              </td>
+              <td>
+                <p class="rate js-rate">3.4</p>
+                <svg class="rating" xmlns="http://www.w3.org/2000/svg" width="58" height="38" viewBox="0 0 58 38" fill="none">
+                  <path class="star" data-index="1"
+                    d="M9.95106 1.30902C9.6517 0.387702 8.34829 0.387711 8.04894 1.30902L8.52447 1.46353L8.04894 1.30902L6.6161 5.71885H1.97933C1.01061 5.71885 0.607835 6.95846 1.39155 7.52786L5.14277 10.2533L3.70993 14.6631C3.41058 15.5844 4.46506 16.3506 5.24877 15.7812L9 13.0557L12.7512 15.7812C13.5349 16.3506 14.5894 15.5844 14.2901 14.6631L12.8572 10.2533L16.6085 7.52786C17.3922 6.95846 16.9894 5.71885 16.0207 5.71885L11.3839 5.71885L9.95106 1.30902Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="2"
+                    d="M29.9511 1.30902C29.6517 0.387702 28.3483 0.387711 28.0489 1.30902L28.5245 1.46353L28.0489 1.30902L26.6161 5.71885H21.9793C21.0106 5.71885 20.6078 6.95846 21.3915 7.52786L25.1428 10.2533L23.7099 14.6631C23.4106 15.5844 24.4651 16.3506 25.2488 15.7812L29 13.0557L32.7512 15.7812C33.5349 16.3506 34.5894 15.5844 34.2901 14.6631L32.8572 10.2533L36.6085 7.52786C37.3922 6.95846 36.9894 5.71885 36.0207 5.71885L31.3839 5.71885L29.9511 1.30902Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="3"
+                    d="M49.9511 1.30902C49.6517 0.387702 48.3483 0.387711 48.0489 1.30902L48.5245 1.46353L48.0489 1.30902L46.6161 5.71885H41.9793C41.0106 5.71885 40.6078 6.95846 41.3915 7.52786L45.1428 10.2533L43.7099 14.6631C43.4106 15.5844 44.4651 16.3506 45.2488 15.7812L49 13.0557L52.7512 15.7812C53.5349 16.3506 54.5894 15.5844 54.2901 14.6631L52.8572 10.2533L56.6085 7.52786C57.3922 6.95846 56.9894 5.71885 56.0207 5.71885L51.3839 5.71885L49.9511 1.30902Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="4"
+                    d="M19.9511 21.309C19.6517 20.3877 18.3483 20.3877 18.0489 21.309L18.5245 21.4635L18.0489 21.309L16.6161 25.7188H11.9793C11.0106 25.7188 10.6078 26.9585 11.3915 27.5279L15.1428 30.2533L13.7099 34.6631C13.4106 35.5844 14.4651 36.3506 15.2488 35.7812L19 33.0557L22.7512 35.7812C23.5349 36.3506 24.5894 35.5844 24.2901 34.6631L22.8572 30.2533L26.6085 27.5279C27.3922 26.9585 26.9894 25.7188 26.0207 25.7188L21.3839 25.7188L19.9511 21.309Z"
+                    stroke="#F0F0F0" />
+                  <path class="star" data-index="5"
+                    d="M39.9511 21.309C39.6517 20.3877 38.3483 20.3877 38.0489 21.309L38.5245 21.4635L38.0489 21.309L36.6161 25.7188H31.9793C31.0106 25.7188 30.6078 26.9585 31.3915 27.5279L35.1428 30.2533L33.7099 34.6631C33.4106 35.5844 34.4651 36.3506 35.2488 35.7812L39 33.0557L42.7512 35.7812C43.5349 36.3506 44.5894 35.5844 44.2901 34.6631L42.8572 30.2533L46.6085 27.5279C47.3922 26.9585 46.9894 25.7188 46.0207 25.7188L41.3839 25.7188L39.9511 21.309Z"
+                    stroke="#F0F0F0" />
+                </svg>      </td>
+              <td>
+                <div class="amount">
+                  <p class="text">非公開</p>
+                  <img class="evaluation -empty" src="images/ico_compare_line.svg" alt="">
+                </div>
+              </td>
+              <td>
+                <div class="detail">
+                  <p class="text">
+                    最短2週間で内定も！<br><span class="Highlight">未経験職種への就職に強み</span>を持つ大手就職支援サービス。
+                  </p>
+                  <a class="link">もっと詳しく</a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>      </section>
 
       <section class="check">
         <p class="title">\ CHECK! /</p>
@@ -568,8 +569,7 @@
           </p>
           <h2 class="SectionTitle_title">転職エージェント人気ランキング</h2>
         </div>
-
-        <div class="items">
+        <div class="RankingItems">
           <aside class="Item">
             <h3 class="Item_title Item_title-ranking Item_title-no1">ビズリーチ</h3>
             <div class="Item_container">
@@ -594,7 +594,7 @@
                   <path class="star" data-index="5"
                     d="M146.084 8.93549L143.606 1.30902C143.307 0.387701 142.003 0.387714 141.704 1.30902L139.226 8.93549H131.207C130.238 8.93549 129.836 10.1751 130.619 10.7445L137.107 15.4579L134.629 23.0844C134.33 24.0057 135.384 24.7718 136.168 24.2024L142.655 19.489L149.143 24.2024C149.926 24.7718 150.981 24.0057 150.681 23.0844L148.203 15.4579L154.691 10.7445C155.475 10.1751 155.072 8.93549 154.103 8.93549L146.084 8.93549Z"
                     stroke="#F0F0F0" />
-                </svg>              </div>
+                </svg>      </div>
               <p class="Item_description">
                 <span class="Highlight">年収500万円以上</span>は登録必須！<br>利用満足度No.1のハイクラス転職サービス。
               </p>
@@ -701,10 +701,9 @@
               <a href="#" class="Button Button-full"><span>『ビスリーチ』の</span>公式サイトはこちら</a>
             </div>
           </aside>
-        </div>
-      </section>
+        </div>      </section>
 
-      <section class="categories">
+      <section class="SearchCategories">
         <h3 class="title">カテゴリから探す</h3>
         <input id="toggle_category_1" type="checkbox" class="toggle">
         <label class="expand" for="toggle_category_1">
@@ -775,8 +774,7 @@
           <a href="#">学生</a>
         </div>
       </section>
-
-      <section class="beginner">
+      <section class="WhatIsAgent">
         <p class="lead">初めての方必見</p>
         <h3 class="title">転職(就職)エージェントとは？</h3>
         <div class="support">
@@ -805,8 +803,7 @@
           </div>
         </div>
       </section>
-
-      <section class="experienced">
+      <section class="InterviewWithExpert">
         <p class="lead">経験者に聞いてみた！</p>
         <h3 class="title">就職・転職成功者の共通点</h3>
         <ul class="list">
@@ -835,9 +832,8 @@
           <img src="images/arrow_experienced.png" alt="">
         </figure>
       </section>
-
-      <section class="no1">
-        <p class="no1_title">
+      <section class="RankingNo1">
+        <p class="title">
           <img src="images/ico_megaphone.svg" alt="">
           迷ったらココを選べば安心！
         </p>
@@ -869,7 +865,7 @@
                 <path class="star" data-index="5"
                   d="M146.084 8.93549L143.606 1.30902C143.307 0.387701 142.003 0.387714 141.704 1.30902L139.226 8.93549H131.207C130.238 8.93549 129.836 10.1751 130.619 10.7445L137.107 15.4579L134.629 23.0844C134.33 24.0057 135.384 24.7718 136.168 24.2024L142.655 19.489L149.143 24.2024C149.926 24.7718 150.981 24.0057 150.681 23.0844L148.203 15.4579L154.691 10.7445C155.475 10.1751 155.072 8.93549 154.103 8.93549L146.084 8.93549Z"
                   stroke="#F0F0F0" />
-              </svg>            </div>
+              </svg>      </div>
             <ul class="Item_info">
               <li class="item">
                 <p class="title">求人数</p>
@@ -888,8 +884,7 @@
             </div>
           </div>
         </aside>
-      </section>
-    </main>
+      </section>    </main>
 
     <footer id="footer" class="Footer">
       <ul class="links">
@@ -899,6 +894,7 @@
       <small>Copyright© , 2025 All Rights Reserved みんなの転職NEXT.</small>
     </footer>  </div>
   
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
