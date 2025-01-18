@@ -11,11 +11,19 @@
 @use "./component/item.scss";
 @use "./component/highlight.scss";
 @use "./component/button.scss";
+@use "./component/searchExpand.scss";
+@use "./component/compareTable.scss";
 
 /* ui */
 @use "./ui/header.scss";
 @use "./ui/navi.scss";
 @use "./ui/footer.scss";
+@use "./ui/search.scss";
+@use "./ui/rankingItems.scss";
+@use "./ui/searchCategories.scss";
+@use "./ui/whatIsAgent.scss";
+@use "./ui/interviewWithExpert.scss";
+@use "./ui/rankingNo1.scss";
 
 /* page */
 @use "./page/top.scss";

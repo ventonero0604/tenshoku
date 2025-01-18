@@ -1,0 +1,195 @@
+.SearchExpand {
+  .toggle {
+    display: none;
+  }
+  .expand {
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 100%;
+    display: block;
+    padding-block: 10px 13px;
+    span {
+      display: block;
+      text-align: center;
+      position: relative;
+      &:before,
+      &:after {
+        content: "";
+        display: block;
+        width: 18px;
+        height: 2px;
+        background: white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+        transition: all 0.2s;
+      }
+      &:after {
+        transform: translateY(-50%) rotate(-90deg);
+      }
+    }
+  }
+  .content {
+    background: var(--pale-blue, #f2f7f9);
+    border-radius: 8px;
+    margin-top: 8px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .toggle:checked + .expand + .content {
+    height: auto;
+    opacity: 1;
+    padding: 18px 14px;
+    transition: opacity 0.2s;
+  }
+  .toggle:checked + .expand {
+    span {
+      &:after {
+        transform: translateY(-50%) rotate(0);
+      }
+    }
+  }
+
+  #step_area {
+    background: var(--pale-blue, #f2f7f9);
+    border-radius: 8px;
+  }
+  #step_area .step_title {
+    font-size: 18px;
+    text-align: center;
+    color: var(--turquoise, #168ab1);
+    margin: 0 0 15px;
+    font-weight: 700;
+    span {
+      color: var(--gold, #b59443);
+      margin-right: 4px;
+    }
+  }
+  #step_area .step_count ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 16px;
+  }
+  #step_area .step_count ul li {
+    background: white;
+    padding: 0.5rem 0.5rem 0.6rem;
+    border-radius: 100px;
+    color: #ffffff;
+    position: relative;
+    line-height: 1;
+    font-size: 12px;
+    color: #aaa;
+  }
+  #step_area .step_count ul li.active {
+    background: var(--turquoise, #168ab1);
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  #step_area .step_count ul li:not(:first-of-type) {
+    margin-left: 1rem;
+  }
+  #step_area .step_body .step {
+    display: none;
+  }
+  #step_area .step_body .step.open {
+    display: block;
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 12px;
+    }
+  }
+
+  #step_area .step_body .step .label_wrap label span {
+    font-weight: 400;
+    color: #666;
+    padding: 0.8rem 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 8px;
+    transition: 0.5s background-color, color;
+    position: relative;
+    background: white;
+    color: var(--dark-gray, #2b2b2b);
+    small {
+      font-size: 70%;
+      line-height: 1.5;
+      display: block;
+      margin-top: 8px;
+    }
+  }
+
+  #step_area .step_body .step .label_wrap label input[type="radio"],
+  #step_area .step_body .step .label_wrap label input[type="checkbox"] {
+    display: none;
+  }
+  #step_area
+    .step_body
+    .step
+    .label_wrap
+    label
+    input[type="radio"]:checked
+    + span,
+  #step_area
+    .step_body
+    .step
+    .label_wrap
+    label
+    input[type="checkbox"]:checked
+    + span {
+    border: 2px solid var(--turquoise, #168ab1);
+    font-weight: 700;
+    color: var(--turquoise, #168ab1);
+  }
+  #step_area .step_body .step .button_wrap {
+    flex: 100%;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+  }
+  #step_area .step_body .step .button_wrap .button,
+  #step_area .step_body .step .button_wrap button {
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    background: var(--turquoise, #168ab1);
+    color: white;
+    font-weight: 400;
+    width: 120px;
+    text-align: center;
+  }
+  #step_area button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+  }
+
+  #step_area .step_body .step .button_wrap button.search_start {
+    background: #ff4b4b;
+    color: #fff;
+  }
+
+  .search_step_wrap section.search_step {
+    position: relative;
+    top: 0;
+    margin: 0 0 60px;
+  }
+
+  .search_step_wrap form.search_step_form {
+    width: 100%;
+  }
+
+  .search_step_wrap #step_area {
+    padding: 20px 60px 10px;
+  }
+}

@@ -1,0 +1,20 @@
+@use "../foundation/text.scss" as text;
+
+.RankingNo1 {
+  padding: 0 15px 60px;
+  .title {
+    color: var(--deep-blue, #081059);
+    @include text.h3;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  .Item {
+    background: #fff6f1;
+    &_container {
+      padding-bottom: 40px;
+    }
+  }
+}
