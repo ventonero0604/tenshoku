@@ -4,6 +4,7 @@
 @use "./foundation/common.scss";
 @use "./foundation/breakPoint.scss";
 @use "./foundation/pxvw.scss";
+@use "./foundation/colors.scss";
 
 /* component */
 @use "./component/wrapper.scss";
@@ -13,6 +14,7 @@
 @use "./component/button.scss";
 @use "./component/searchExpand.scss";
 @use "./component/compareTable.scss";
+@use "./component/kv.scss";
 
 /* ui */
 @use "./ui/header.scss";
@@ -24,9 +26,13 @@
 @use "./ui/whatIsAgent.scss";
 @use "./ui/interviewWithExpert.scss";
 @use "./ui/rankingNo1.scss";
+@use "./ui/logoSlider.scss";
+@use "./ui/jobChangeTrends.scss";
 
 /* page */
-@use "./page/top.scss";
+@use "./page/format_1.scss";
+@use "./page/format_2.scss";
+@use "./page/format_3.scss";
 
 /* tailwind */
 @tailwind base;

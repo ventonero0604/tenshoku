@@ -6,10 +6,10 @@
   <div class="Wrapper">
     {{> header}}
 
-    <main class="Top">
-      <section class="main">
+    <main class="Format_1">
+      <section class="Kv">
         <h2>
-          <img src="images/top_main.png" alt="【PR】エージェント選びで後悔しない 転職サイトランキング">
+          <img src="images/kv_top.png" alt="{{altKeyVisual}}">
         </h2>
         <p class="date">
           <span>
@@ -22,14 +22,52 @@
         <h3 class="title">
           あらゆる業界・職種の転職サイトを網羅
         </h3>
-        <div class="logos">
-          <img src="images/img_banners_logo.png" alt="" class="logo">
-          <img src="images/img_banners_logo.png" alt="" class="logo">
-        </div>
+        {{> logoSlider}}
       </section>
 
       <section class="Search">
         {{> search}}
+        <div class="pages">
+          <ul class="list">
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_20.svg" alt=""></i>
+                <span class="title">20代</span>
+                <span class="text">転職ランキング</span>
+              </a></li>
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_30.svg" alt=""></i>
+                <span class="title">30代</span>
+                <span class="text">転職ランキング</span>
+              </a></li>
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_40.svg" alt=""></i>
+                <span class="title">40代</span>
+                <span class="text">転職ランキング</span>
+              </a></li>
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_50.svg" alt=""></i>
+                <span class="title">50代</span>
+                <span class="text">転職ランキング</span>
+              </a></li>
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_it.svg" alt=""></i>
+                <span class="title">IT・WEB職種</span>
+                <span class="text">転職ランキング</span>
+              </a></li>
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_highclass.svg" alt=""></i>
+                <span class="title">ハイクラス</span>
+                <span class="text">転職ランキング</span>
+              </a></li>
+          </ul>
+          <a href="#" class="link -full">
+            <i><img src="images/ico_page_star.svg" alt=""></i>
+            <div class="texts">
+              <span class="title">24歳以下・第二新卒・フリーター</span>
+              <span class="text">転職ランキング</span>
+            </div>
+          </a>
+        </div>
       </section>
 
       <section class="compare">
@@ -44,31 +82,7 @@
         {{> compareTable}}
       </section>
 
-      <section class="check">
-        <p class="title">\ CHECK! /</p>
-        <input id="toggle_check" type="checkbox" class="toggle">
-        <label class="expand" for="toggle_check"><span>2月の転職動向</span></label>
-        <div class="content">
-          <p class="content_title">
-            2月は転職活動におすすめ！
-          </p>
-          <p class="content_text">
-            2月は年度末を控え企業が新年度の体制を整える時期で、<span class="Highlight">求人が増える傾向</span>があります。また、1月に開始された求人が出揃い応募者数が落ち着くため、<span
-              class="Highlight">ライバルが減りやすい</span>のも魅力です。企業側もスムーズな採用を目指し選考が進みやすい時期といえます。
-          </p>
-          <aside class="point">
-            <p class="point_title">POINT</p>
-            <div class="point_contents">
-              <p class="point_text">
-                早めの応募が重要です。応募先の業界研究や履歴書のブラッシュアップで、他の応募者と差をつけましょう。
-              </p>
-              <figure class="point_image">
-                <img src="images/img_point.png" alt="">
-              </figure>
-            </div>
-          </aside>
-        </div>
-      </section>
+      {{> jobChangeTrends}}
 
       <section class="ranking">
         <div class="SectionTitle">
@@ -93,6 +107,7 @@
 
     {{> footer}}
   </div>
+  <link rel="stylesheet" href="/override/override.css">
   <script type="module" src="./js/main.js"></script>
   <script src="assets/js/main.js"></script>
 </body>

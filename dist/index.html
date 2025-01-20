@@ -10,7 +10,6 @@
   <meta name="keywords" content="20代,第二新卒,転職">
   <meta name="referrer" content="no-referrer-when-downgrade">
   
-  <link rel="stylesheet" href="./override/override.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -38,7 +37,7 @@
       r[o][j].add(e + t); setTimeout(function () { if (r[o][j].contains(e + t)) { r[o][j].remove(e + t); p['_' + t] = 0 } }, c)
     })(window, document, 'documentElement', 'classList', 'loading', 2000, 'W4ZN2R7G')</script>
   <!-- End Optimize Next -->
-  <script type="module" crossorigin src="./assets/js/index.js"></script>
+  <script type="module" crossorigin src="./assets/js/main.js"></script>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -66,10 +65,10 @@
           <dd><a href="#">HOMEに戻る</a></dd>
         </dl>
       </nav></header>
-    <main class="Top">
-      <section class="main">
+    <main class="Format_1">
+      <section class="Kv">
         <h2>
-          <img src="images/top_main.png" alt="【PR】エージェント選びで後悔しない 転職サイトランキング">
+          <img src="images/kv_top.png" alt="【PR】エージェント選びで後悔しない 転職サイトランキング">
         </h2>
         <p class="date">
           <span>
@@ -82,14 +81,15 @@
         <h3 class="title">
           あらゆる業界・職種の転職サイトを網羅
         </h3>
-        <div class="logos">
-          <img src="images/img_banners_logo.png" alt="" class="logo">
-          <img src="images/img_banners_logo.png" alt="" class="logo">
-        </div>
-      </section>
+        <div class="LogoSlider">
+          <div class="logos">
+            <img src="images/img_banners_logo.png" alt="" class="logo">
+            <img src="images/img_banners_logo.png" alt="" class="logo">
+          </div>
+        </div>      </section>
 
       <section class="Search">
-        <div class="SearchExpand">
+        <div class="SearchExpand js-SearchExpand">
           <input id="toggle" type="checkbox" class="toggle">
           <label class="expand" for="toggle"><span>条件で転職サイトを探す</span></label>
           <div class="content">
@@ -177,27 +177,38 @@
                   <div class="step radios_wrap column2 touch_submit" data-title="ご希望の職種は？">
                     <div class="wrapper">
                       <div class="label_wrap"><label><input type="radio" name="occupation" value="01"
-                            form="form_id02"><span>営業・セールス・CS<br><small>営業職/カスタマーサポート…</small></span></label></div>
+                            form="form_id02"><span>営業・セールス・CS<br><small>営業職/カスタマーサポート…</small></span></label>
+                      </div>
                       <div class="label_wrap"><label><input type="radio" name="occupation" value="02"
-                            form="form_id02"><span>企画・マーケ・経営<br><small>広告/宣伝/販促/営業企画…</small></span></label></div>
+                            form="form_id02"><span>企画・マーケ・経営<br><small>広告/宣伝/販促/営業企画…</small></span></label>
+                      </div>
                       <div class="label_wrap"><label><input type="radio" name="occupation" value="03"
-                            form="form_id02"><span>管理<br><small>会計/財務/法務/広報/人事…</small></span></label></div>
+                            form="form_id02"><span>管理<br><small>会計/財務/法務/広報/人事…</small></span></label>
+                      </div>
                       <div class="label_wrap"><label><input type="radio" name="occupation" value="04"
-                            form="form_id02"><span>事務・アシスタント<br><small>営業事務/データ入力/秘書…</small></span></label></div>
+                            form="form_id02"><span>事務・アシスタント<br><small>営業事務/データ入力/秘書…</small></span></label>
+                      </div>
                       <div class="label_wrap"><label><input type="radio" name="occupation" value="05"
-                            form="form_id02"><span>販売・サービス<br><small>接客/販売/店舗運営/運輸…</small></span></label></div>
+                            form="form_id02"><span>販売・サービス<br><small>接客/販売/店舗運営/運輸…</small></span></label>
+                      </div>
                       <div class="label_wrap"><label><input type="radio" name="occupation" value="06"
-                            form="form_id02"><span>コンサルタント<br><small>経営/戦略/アナリスト…</small></span></label></div>
+                            form="form_id02"><span>コンサルタント<br><small>経営/戦略/アナリスト…</small></span></label>
+                      </div>
                       <div class="label_wrap"><label><input type="radio" name="occupation" value="07"
-                            form="form_id02"><span>クリエイティブ職<br><small>デザイナー/ディレクター/編集…</small></span></label></div>
+                            form="form_id02"><span>クリエイティブ職<br><small>デザイナー/ディレクター/編集…</small></span></label>
+                      </div>
                       <div class="label_wrap"><label><input type="radio" name="occupation" value="08"
-                            form="form_id02"><span>ITエンジニア職<br><small>SE/プログラマ/保守/インフラ…</small></span></label></div>
+                            form="form_id02"><span>ITエンジニア職<br><small>SE/プログラマ/保守/インフラ…</small></span></label>
+                      </div>
                       <div class="label_wrap"><label><input type="radio" name="occupation" value="09"
-                            form="form_id02"><span>建築・土木技術職<br><small>施工管理/設備管理/設計/積算</small></span></label></div>
+                            form="form_id02"><span>建築・土木技術職<br><small>施工管理/設備管理/設計/積算</small></span></label>
+                      </div>
                       <div class="label_wrap"><label><input type="radio" name="occupation" value="10"
-                            form="form_id02"><span>技術専門職<br><small>化学/機械/食品/他メーカー…</small></span></label></div>
+                            form="form_id02"><span>技術専門職<br><small>化学/機械/食品/他メーカー…</small></span></label>
+                      </div>
                       <div class="label_wrap"><label><input type="radio" name="occupation" value="11"
-                            form="form_id02"><span>金融系専門職<br><small>ディーラー/保険専門職/M&amp;A…</small></span></label></div>
+                            form="form_id02"><span>金融系専門職<br><small>ディーラー/保険専門職/M&amp;A…</small></span></label>
+                      </div>
                     </div>
                     <div class="button_wrap">
                       <button type="button" class="prev">戻る</button>
@@ -210,48 +221,49 @@
             </form>
           </div>
         
-          <div class="pages">
-            <ul class="list">
-              <li><a href="#" class="link">
-                  <i><img src="images/ico_page_20.svg" alt=""></i>
-                  <span class="title">20代</span>
-                  <span class="text">転職ランキング</span>
-                </a></li>
-              <li><a href="#" class="link">
-                  <i><img src="images/ico_page_30.svg" alt=""></i>
-                  <span class="title">30代</span>
-                  <span class="text">転職ランキング</span>
-                </a></li>
-              <li><a href="#" class="link">
-                  <i><img src="images/ico_page_40.svg" alt=""></i>
-                  <span class="title">40代</span>
-                  <span class="text">転職ランキング</span>
-                </a></li>
-              <li><a href="#" class="link">
-                  <i><img src="images/ico_page_50.svg" alt=""></i>
-                  <span class="title">50代</span>
-                  <span class="text">転職ランキング</span>
-                </a></li>
-              <li><a href="#" class="link">
-                  <i><img src="images/ico_page_it.svg" alt=""></i>
-                  <span class="title">IT・WEB職種</span>
-                  <span class="text">転職ランキング</span>
-                </a></li>
-              <li><a href="#" class="link">
-                  <i><img src="images/ico_page_highclass.svg" alt=""></i>
-                  <span class="title">ハイクラス</span>
-                  <span class="text">転職ランキング</span>
-                </a></li>
-            </ul>
-            <a href="#" class="link -full">
-              <i><img src="images/ico_page_star.svg" alt=""></i>
-              <div class="texts">
-                <span class="title">24歳以下・第二新卒・フリーター</span>
+        
+        </div>        <div class="pages">
+          <ul class="list">
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_20.svg" alt=""></i>
+                <span class="title">20代</span>
                 <span class="text">転職ランキング</span>
-              </div>
-            </a>
-          </div>
-        </div>      </section>
+              </a></li>
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_30.svg" alt=""></i>
+                <span class="title">30代</span>
+                <span class="text">転職ランキング</span>
+              </a></li>
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_40.svg" alt=""></i>
+                <span class="title">40代</span>
+                <span class="text">転職ランキング</span>
+              </a></li>
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_50.svg" alt=""></i>
+                <span class="title">50代</span>
+                <span class="text">転職ランキング</span>
+              </a></li>
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_it.svg" alt=""></i>
+                <span class="title">IT・WEB職種</span>
+                <span class="text">転職ランキング</span>
+              </a></li>
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_highclass.svg" alt=""></i>
+                <span class="title">ハイクラス</span>
+                <span class="text">転職ランキング</span>
+              </a></li>
+          </ul>
+          <a href="#" class="link -full">
+            <i><img src="images/ico_page_star.svg" alt=""></i>
+            <div class="texts">
+              <span class="title">24歳以下・第二新卒・フリーター</span>
+              <span class="text">転職ランキング</span>
+            </div>
+          </a>
+        </div>
+      </section>
 
       <section class="compare">
         <div class="SectionTitle">
@@ -262,7 +274,7 @@
           </p>
           <h2 class="SectionTitle_title">人気の転職サイト5社比較</h2>
         </div>
-        <div class="CompareTable">
+        <div class="CompareTable js-CompareTable">
           <table>
             <tr>
               <th>転職サービス</th>
@@ -534,7 +546,7 @@
           </table>
         </div>      </section>
 
-      <section class="check">
+      <section class="JobChangeTrends">
         <p class="title">\ CHECK! /</p>
         <input id="toggle_check" type="checkbox" class="toggle">
         <label class="expand" for="toggle_check"><span>2月の転職動向</span></label>
@@ -559,7 +571,6 @@
           </aside>
         </div>
       </section>
-
       <section class="ranking">
         <div class="SectionTitle">
           <p class="SectionTitle_lead">
@@ -893,6 +904,7 @@
       </ul>
       <small>Copyright© , 2025 All Rights Reserved みんなの転職NEXT.</small>
     </footer>  </div>
+  <link rel="stylesheet" href="./override/override.css">
   
   <script src="assets/js/main.js"></script>
 </body>

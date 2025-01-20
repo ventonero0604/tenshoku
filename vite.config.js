@@ -8,12 +8,11 @@ import handlebars from "vite-plugin-handlebars";
 //HTML上で出し分けたい各ページごとの情報
 const pageData = {
   "index.html": {
-    isHome: true,
-    title: "Main Page",
+    altKeyVisual: "【PR】エージェント選びで後悔しない 転職サイトランキング",
   },
-  "hoge.html": {
-    isHome: false,
-    title: "Hoge",
+  "engineer.html": {
+    altKeyVisual:
+      "【PR】20代の転職 転職サイトランキング 後悔しない正しい選び方 TOP5",
   },
 };
 
@@ -46,7 +45,7 @@ export default defineConfig({
       },
       input: {
         index: resolve(__dirname, root, "index.html"),
-        // hoge: resolve(__dirname, root, "hoge.html"),
+        engineer: resolve(__dirname, root, "engineer.html"),
       },
     },
   },
@@ -59,7 +58,8 @@ export default defineConfig({
       partialDirectory: resolve(__dirname, root, "components"),
       //各ページ情報の読み込み
       context(pagePath) {
-        return pageData[pagePath];
+        const pageName = pagePath.split("/").pop();
+        return pageData[pageName];
       },
     }),
   ],

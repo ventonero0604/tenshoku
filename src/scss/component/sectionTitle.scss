@@ -31,5 +31,6 @@
   &_title {
     @include text.h2;
     color: var(--gold, #b59443);
+    padding-inline: 8px;
   }
 }

@@ -1,7 +1,13 @@
 import $ from "jquery";
+import Swiper from "swiper";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 $(function () {
-  // menu
+  /* 
+    グローバルメニュー
+  */
   document.querySelector(".js-trigger").addEventListener("click", function () {
     this.classList.toggle("is-open");
     const el = document.querySelector(".js-navi");
@@ -9,7 +15,10 @@ $(function () {
     document.body.classList.toggle("is-fixed");
   });
 
-  if ($(".Top").length) {
+  /* 
+    条件で転職サイトを探す
+  */
+  if ($(".js-SearchExpand").length) {
     var count_ul = $("#step_area .step_count ul");
     if (count_ul.length > 0) {
       var li = [];
@@ -89,7 +98,12 @@ $(function () {
         $("#step_area .step_count ul li").eq(i).addClass("active");
       }
     }
+  }
 
+  /* 
+     比較表の星をfillする
+  */
+  if ($(".js-CompareTable").length) {
     function setRatings() {
       $(".js-rate").each(function () {
         const rateElement = $(this);
@@ -163,18 +177,38 @@ $(function () {
 
     // DOMが完全に読み込まれた後にすべての評価を設定
     setRatings();
+  }
 
-    if ($(".js-user-expand")) {
-      $(".js-user-expand").on("click", function () {
-        $(this).toggleClass("is-open");
-        $(".js-user-container").toggleClass("is-open");
-        // ボタンのテキストを切り替える
-        if ($(this).hasClass("is-open")) {
-          $(this).find("span").text("閉じる");
-        } else {
-          $(this).find("span").text("もっと読む");
-        }
-      });
-    }
+  /* 
+     ランキング内「利用した方のクチコミ」のexpand
+  */
+  if ($(".js-user-expand")) {
+    $(".js-user-expand").on("click", function () {
+      $(this).toggleClass("is-open");
+      $(".js-user-container").toggleClass("is-open");
+      // ボタンのテキストを切り替える
+      if ($(this).hasClass("is-open")) {
+        $(this).find("span").text("閉じる");
+      } else {
+        $(this).find("span").text("もっと読む");
+      }
+    });
+  }
+
+  /* 
+     カルーセル
+  */
+  if ($(".swiper")) {
+    const swiper = new Swiper(".swiper", {
+      modules: [Pagination],
+      centeredSlides: true,
+      slidesPerView: 1.3,
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
   }
 });

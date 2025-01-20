@@ -1,12 +1,5 @@
 html {
   scroll-behavior: smooth;
-  --deep-blue: #081059;
-  --gold: #b59443;
-  --turquoise: #168ab1;
-  --dark-gray: #2b2b2b;
-  --light-gray: #f0f0f0;
-  --pale-blue: #f2f7f9;
-  --orange-red: linear-gradient(90deg, #f90 0%, #ff2600 100%);
 }
 
 body {
@@ -31,6 +24,12 @@ a {
   &:hover {
     opacity: 0.7;
   }
+}
+
+small {
+  color: var(--dark-gray, #2b2b2b);
+  font-size: 12px;
+  font-weight: 400;
 }
 
 em {

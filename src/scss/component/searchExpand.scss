@@ -33,7 +33,6 @@
   .content {
     background: var(--pale-blue, #f2f7f9);
     border-radius: 8px;
-    margin-top: 8px;
     height: 0;
     opacity: 0;
     overflow: hidden;
@@ -43,6 +42,7 @@
     opacity: 1;
     padding: 18px 14px;
     transition: opacity 0.2s;
+    margin-top: 8px;
   }
   .toggle:checked + .expand {
     span {
