@@ -34,7 +34,7 @@
 
 ## 確認環境
 テンプレートファイルは以下URLで確認できます。
-- https://ventonero0604.github.io/tenshoku/dist/
+- https://ventonero0604.github.io/tenshoku/dist/sitemap.html
 
 
 ----
