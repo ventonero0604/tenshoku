@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+{{> head}}
+
+<body>
+  <div class="Wrapper">
+    {{> header}}
+
+    <main class="Format_1">
+      <section class="Kv">
+        <h2>
+          <img src="images/kv_top.png" alt="{{altKeyVisual}}">
+        </h2>
+        <p class="date">
+          <span>
+            2025年最新
+          </span>
+        </p>
+      </section>
+
+      <section class="banners">
+        <h3 class="title">
+          あらゆる業界・職種の転職サイトを網羅
+        </h3>
+        {{> logoSlider}}
+      </section>
+
+      <section class="Search">
+        {{> search}}
+        <div class="pages">
+          <ul class="list">
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_20.svg" alt=""></i>
+                <span class="title">20代</span>
+                <span class="text">転職ランキング</span>
+              </a></li>
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_30.svg" alt=""></i>
+                <span class="title">30代</span>
+                <span class="text">転職ランキング</span>
+              </a></li>
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_40.svg" alt=""></i>
+                <span class="title">40代</span>
+                <span class="text">転職ランキング</span>
+              </a></li>
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_50.svg" alt=""></i>
+                <span class="title">50代</span>
+                <span class="text">転職ランキング</span>
+              </a></li>
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_it.svg" alt=""></i>
+                <span class="title">IT・WEB職種</span>
+                <span class="text">転職ランキング</span>
+              </a></li>
+            <li><a href="#" class="link">
+                <i><img src="images/ico_page_highclass.svg" alt=""></i>
+                <span class="title">ハイクラス</span>
+                <span class="text">転職ランキング</span>
+              </a></li>
+          </ul>
+          <a href="#" class="link -full">
+            <i><img src="images/ico_page_star.svg" alt=""></i>
+            <div class="texts">
+              <span class="title">24歳以下・第二新卒・フリーター</span>
+              <span class="text">転職ランキング</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="compare">
+        <div class="SectionTitle">
+          <p class="SectionTitle_lead">
+            <i class="SectionTitle_lead_border -left"></i>
+            <span class="SectionTitle_lead_text">2025年2月版</span>
+            <i class="SectionTitle_lead_border -right"></i>
+          </p>
+          <h2 class="SectionTitle_title">人気の転職サイト5社比較</h2>
+        </div>
+        {{> compareTable}}
+      </section>
+
+      {{> jobChangeTrends}}
+
+      <section class="ranking">
+        <div class="SectionTitle">
+          <p class="SectionTitle_lead">
+            <i class="SectionTitle_lead_border -left"></i>
+            <span class="SectionTitle_lead_text">口コミ評判をもとに5社厳選</span>
+            <i class="SectionTitle_lead_border -right"></i>
+          </p>
+          <h2 class="SectionTitle_title">転職エージェント人気ランキング</h2>
+        </div>
+        {{> rankingItems}}
+      </section>
+
+      {{> searchCategories}}
+
+      {{> whatIsAgent}}
+
+      {{> interviewWithExpert}}
+
+      {{> rankingNo1}}
+    </main>
+
+    {{> footer}}
+  </div>
+  <link rel="stylesheet" href="/override/override.css">
+  <script type="module" src="./js/main.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+@use "../foundation/breakPoint.scss" as bp;
+
+.LogoSlider {
+  padding-block: 8px;
+  .logos {
+    height: 10.6vw;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    @include bp.pc {
+      height: 80px;
+      width: 750px;
+    }
+    .logo {
+      width: auto;
+      height: 100%;
+      max-width: unset;
+      &:first-child {
+        animation: slide1 60s -30s linear infinite;
+      }
+      &:last-child {
+        animation: slide2 60s 0s linear infinite;
+      }
+    }
+  }
+  @keyframes slide1 {
+    0% {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes slide2 {
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+  }
+}

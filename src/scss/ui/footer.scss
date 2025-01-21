@@ -1,0 +1,24 @@
+@use "../foundation/text.scss" as *;
+
+.Footer {
+  background: var(--light-gray, #f0f0f0);
+  text-align: center;
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  border-top: 3px solid var(--gold, #b59443);
+
+  .links {
+    display: grid;
+    gap: 5px;
+    a {
+      color: var(--deep-blue, #081059);
+      text-align: center;
+      text-decoration: underline;
+    }
+  }
+  small {
+    color: var(--gold, #b59443);
+    @include sub;
+  }
+}

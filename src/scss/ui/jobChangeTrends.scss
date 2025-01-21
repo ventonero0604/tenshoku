@@ -1,0 +1,116 @@
+@use "../foundation/text.scss" as text;
+
+.JobChangeTrends {
+  background: var(--light-gray, #f0f0f0);
+  padding: 20px 15px 34px;
+  .title {
+    @include text.h3;
+    color: var(--gold, #b59443);
+    text-align: center;
+  }
+  .toggle {
+    display: none;
+  }
+  .expand {
+    border-radius: 8px;
+    width: 100%;
+    display: block;
+    padding-block: 10px 13px;
+    background: var(--deep-blue, #081059);
+    color: white;
+    margin-top: 16px;
+    span {
+      display: block;
+      text-align: center;
+      position: relative;
+      &:before,
+      &:after {
+        content: "";
+        display: block;
+        width: 18px;
+        height: 2px;
+        background: white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+        transition: all 0.2s;
+      }
+      &:after {
+        transform: translateY(-50%) rotate(-90deg);
+      }
+    }
+  }
+  .content {
+    background: var(--pale-blue, #f2f7f9);
+    border-radius: 8px;
+    margin-top: 8px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .toggle:checked + .expand + .content {
+    height: auto;
+    opacity: 1;
+    padding: 18px 14px;
+    transition: opacity 0.2s;
+  }
+  .toggle:checked + .expand {
+    span {
+      &:after {
+        transform: translateY(-50%) rotate(0);
+      }
+    }
+  }
+  .content {
+    background: var(--white, #fff);
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    &_title {
+      color: var(--deep-blue, #081059);
+      text-align: center;
+      @include text.h3;
+      border-bottom: 2px dashed var(--light-gray, #f0f0f0);
+      padding-bottom: 8px;
+    }
+  }
+  .point {
+    border-radius: 8px;
+    border: 2px solid var(--light-gray, #f0f0f0);
+    background: var(--white, #fff);
+    padding: 0 0 18px 18px;
+    &_title {
+      color: var(--deep-blue, #081059);
+      @include text.h3;
+      display: flex;
+      align-items: flex-end;
+      gap: 6px;
+      margin-top: -1px;
+      &:before {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 33px;
+        background: center/cover no-repeat
+          url("../..//images/img_point_ribbon.svg");
+      }
+    }
+    &_contents {
+      display: flex;
+      gap: 16px;
+      margin-top: 20px;
+    }
+    &_text {
+      width: 184px;
+    }
+    &_image {
+      flex: 1;
+      img {
+        width: 144px;
+        display: block;
+      }
+    }
+  }
+}

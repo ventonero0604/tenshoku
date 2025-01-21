@@ -1,0 +1,107 @@
+@use "../foundation/text.scss" as text;
+
+.CompareTable {
+  width: 100%;
+
+  table,
+  td,
+  th {
+    border: 2px solid var(--light-gray, #f0f0f0);
+  }
+
+  table {
+    width: 100%;
+    th {
+      background: var(--deep-blue, #081059);
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+    }
+    td {
+      max-width: 126px;
+      padding: 10px 5px 14px;
+      text-align: center;
+      vertical-align: middle;
+      .info {
+        .ranking {
+          display: inline-flex;
+          align-items: flex-end;
+          justify-content: center;
+          gap: 8px;
+          .text {
+            @include text.h3;
+            color: var(--deep-blue, #081059);
+            border-bottom: 1px dashed var(--gold, #b59443);
+          }
+        }
+        .logo {
+          margin-top: 8px;
+        }
+        .text {
+          @include text.sub;
+          margin-top: 8px;
+          white-space: nowrap;
+        }
+      }
+      .rate {
+        @include text.h2;
+        color: var(--deep-blue, #081059);
+        margin-bottom: 8px;
+      }
+      .amount {
+        .text {
+          font-size: 12px;
+          font-weight: 700;
+          color: var(--deep-blue, #081059);
+          line-height: 1.2;
+          b {
+            @include text.h2;
+            display: block;
+          }
+        }
+        .evaluation {
+          margin: 8px auto;
+          &.-empty {
+            margin-top: 24px;
+          }
+        }
+      }
+      .rating {
+        margin-inline: auto;
+        .star {
+          fill: none;
+          stroke: #f0f0f0;
+          &.filled {
+            fill: var(--gold, #b59443);
+          }
+        }
+      }
+      .detail {
+        font-size: 12px;
+        .text {
+          text-align: left;
+        }
+        .link {
+          margin-top: 12px;
+          color: var(--deep-blue, #081059);
+          font-weight: 700;
+          border-bottom: 1px dashed var(--deep-blue, #081059);
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 2px;
+          padding-bottom: 4px;
+          &:after {
+            content: "";
+            display: block;
+            width: 14px;
+            height: 14px;
+            background: center/cover no-repeat
+              url("../../images/ico_more_link.svg");
+          }
+        }
+      }
+    }
+  }
+}

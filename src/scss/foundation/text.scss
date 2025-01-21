@@ -1,0 +1,19 @@
+@mixin h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+@mixin h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@mixin h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@mixin sub {
+  font-size: 12px;
+}

@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+.CompareTable table td .info .text {
+  white-space: normal;
+}

@@ -1,0 +1,87 @@
+@use "../foundation/text.scss" as text;
+
+.WhatIsAgent {
+  background: var(--light-gray, #f0f0f0);
+  padding: 24px 15px;
+  .lead {
+    @include text.h3;
+    color: var(--deep-blue, #081059);
+    text-align: center;
+  }
+  .title {
+    @include text.h2;
+    color: var(--gold, #b59443);
+    text-align: center;
+  }
+  .support {
+    &_title {
+      border-radius: 8px;
+      background: var(--deep-blue, #081059);
+      color: white;
+      text-align: center;
+      @include text.h3;
+      padding: 11px 0 16px;
+      margin-top: 24px;
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-right: 15px solid transparent;
+        border-left: 15px solid transparent;
+        border-top: 20px solid var(--deep-blue, #081059);
+        border-bottom: 0;
+        position: absolute;
+        left: 50%;
+        bottom: -18px;
+        transform: translateX(-50%);
+      }
+    }
+    &_contents {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+      .image {
+        width: 175px;
+      }
+      .list {
+        display: grid;
+        gap: 10px;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-weight: 700;
+          &:before {
+            content: "";
+            display: block;
+            width: 14px;
+            height: 14px;
+            background: center/cover no-repeat
+              url("../..//images/ico_beginner_check.svg");
+          }
+        }
+      }
+    }
+  }
+  .flow {
+    border-radius: 8px;
+    background: var(--white, #fff);
+    &_title {
+      color: var(--deep-blue, #081059);
+      font-weight: 700;
+      border-bottom: 2px solid var(--light-gray, #f0f0f0);
+      text-align: center;
+      padding: 12px 0 14px;
+    }
+    &_contents {
+      display: grid;
+      place-items: center;
+      padding: 20px;
+    }
+  }
+}
