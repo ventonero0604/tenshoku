@@ -132,7 +132,8 @@
       justify-content: center;
       gap: 20px;
       .image {
-        width: 116px;
+        max-width: 116px;
+        flex: 1;
       }
       .texts {
         border-bottom: 3px dashed var(--light-gray, #f0f0f0);

@@ -12,7 +12,11 @@ const pageData = {
   },
   "engineer.html": {
     altKeyVisual:
-      "【PR】20代の転職 転職サイトランキング 後悔しない正しい選び方 TOP5",
+      "【PR】IT・WEB職種 転職サイトランキング 後悔しない正しい選び方 TOP5",
+  },
+  "game.html": {
+    altKeyVisual:
+      "【PR】ゲーム業界 転職サイトランキング 後悔しない正しい選び方 TOP5",
   },
 };
 

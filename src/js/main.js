@@ -182,7 +182,7 @@ $(function () {
   /* 
      ランキング内「利用した方のクチコミ」のexpand
   */
-  if ($(".js-user-expand")) {
+  if ($(".js-user-expand").length) {
     $(".js-user-expand").on("click", function () {
       $(this).toggleClass("is-open");
       $(".js-user-container").toggleClass("is-open");
@@ -198,17 +198,54 @@ $(function () {
   /* 
      カルーセル
   */
-  if ($(".swiper")) {
+  if ($(".swiper").length) {
     const swiper = new Swiper(".swiper", {
       modules: [Pagination],
       centeredSlides: true,
       slidesPerView: 1.3,
       spaceBetween: 20,
-      loop: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
+    });
+  }
+
+  /* 
+     職種切り替え
+  */
+  if ($(".Format_3").length) {
+    const buttons = document.querySelectorAll(".js-button");
+    const contents = document.querySelectorAll(".js-contents");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        // すべてのボタンからis-activeクラスを削除
+        buttons.forEach((btn) => btn.classList.remove("is-active"));
+        // クリックされたボタンと同じdata-typeを持つボタンにis-activeクラスを追加
+        const type = button.getAttribute("data-type");
+        buttons.forEach((btn) => {
+          if (btn.getAttribute("data-type") === type) {
+            btn.classList.add("is-active");
+          }
+        });
+
+        // すべてのコンテンツからis-visibleクラスを削除
+        contents.forEach((content) => {
+          content.classList.remove("is-visible", "fade-in");
+        });
+
+        // 対応するdata-typeを持つすべてのコンテンツにis-visibleクラスを追加
+        contents.forEach((content) => {
+          if (content.getAttribute("data-type") === type) {
+            content.classList.add("is-visible");
+            // 次のフレームでfade-inクラスを追加してアニメーションを適用
+            requestAnimationFrame(() => {
+              content.classList.add("fade-in");
+            });
+          }
+        });
+      });
     });
   }
 });
