@@ -50,6 +50,8 @@ export default defineConfig({
       input: {
         index: resolve(__dirname, root, "index.html"),
         engineer: resolve(__dirname, root, "engineer.html"),
+        game: resolve(__dirname, root, "game.html"),
+        sitemap: resolve(__dirname, root, "sitemap.html"),
       },
     },
   },
