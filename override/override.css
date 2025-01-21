@@ -1,5 +1,5 @@
 @charset "UTF-8";
 
-.Highlight {
-  // color: red;
+.CompareTable table td .info .text {
+  white-space: normal;
 }

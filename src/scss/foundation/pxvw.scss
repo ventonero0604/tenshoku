@@ -1,3 +1,0 @@
-@function vwsp($pxValue) {
-  @return calc($pxValue / 430) * 100vw;
-}
