@@ -34,6 +34,9 @@
 @use "./page/format_2.scss";
 @use "./page/format_3.scss";
 
+/* libs */
+@use "./libs/swiper.scss";
+
 /* tailwind */
 @tailwind base;
 @tailwind components;
