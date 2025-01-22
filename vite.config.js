@@ -18,6 +18,22 @@ const pageData = {
     altKeyVisual:
       "【PR】ゲーム業界 転職サイトランキング 後悔しない正しい選び方 TOP5",
   },
+  "age20.html": {
+    altKeyVisual:
+      "【PR】20代の転職 転職サイトランキング 後悔しない正しい選び方 TOP5",
+  },
+  "age30.html": {
+    altKeyVisual:
+      "【PR】30代の転職 転職サイトランキング 後悔しない正しい選び方 TOP5",
+  },
+  "age40.html": {
+    altKeyVisual:
+      "【PR】40代の転職 転職サイトランキング 後悔しない正しい選び方 TOP5",
+  },
+  "age50.html": {
+    altKeyVisual:
+      "【PR】50代の転職 転職サイトランキング 後悔しない正しい選び方 TOP5",
+  },
 };
 
 const root = "src";
@@ -51,6 +67,10 @@ export default defineConfig({
         index: resolve(__dirname, root, "index.html"),
         engineer: resolve(__dirname, root, "engineer.html"),
         game: resolve(__dirname, root, "game.html"),
+        age20: resolve(__dirname, root, "age20.html"),
+        age30: resolve(__dirname, root, "age30.html"),
+        age40: resolve(__dirname, root, "age40.html"),
+        age50: resolve(__dirname, root, "age50.html"),
         sitemap: resolve(__dirname, root, "sitemap.html"),
       },
     },

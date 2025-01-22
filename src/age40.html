@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+{{> head}}
+
+<body>
+  <div class="Wrapper">
+    {{> header}}
+
+    <main class="Format_2">
+      <section class="Kv">
+        <h2>
+          <img src="images/kv_age_40.png" alt="{{altKeyVisual}}">
+        </h2>
+      </section>
+
+      <section class="banners">
+        {{> logoSlider}}
+      </section>
+
+      <section class="Search">
+        {{> search}}
+        <a href="#" class="Format_2_button">
+          <div class="Format_2_button_content">
+            <p class="Format_2_button_text">
+              正社員での就業経験がない方はこちら
+            </p>
+            <p class="Format_2_button_subText">
+              （フリーター・無職・既卒で未就職の方）
+            </p>
+          </div>
+        </a>
+      </section>
+
+      <!-- 年収セレクトボタン -->
+      <section class="select">
+        <div class="header">
+          <div class="SectionTitle">
+            <p class="SectionTitle_lead">
+              <i class="SectionTitle_lead_border -left"></i>
+              <span class="SectionTitle_lead_text">40代正社員で転職を検討中の方へ</span>
+              <i class="SectionTitle_lead_border -right"></i>
+            </p>
+            <h2 class="SectionTitle_title">現在の年収を選択してください</h2>
+          </div>
+          <div class="switchButton_wrapper">
+            <button class="switchButton js-button is-active" data-type="lower">
+              <span class="switchButton_content">
+                <small>年収</small>
+                〜500万円未満
+                <img class="off" src="images/ico_under_500.svg" alt="">
+                <img class="on" src="images/ico_under_500_white.svg" alt="">
+              </span>
+            </button>
+            <button class="switchButton js-button" data-type="upper">
+              <span class="switchButton_content">
+                <small>年収</small>
+                500万円以上〜
+                <img class="off" src="images/ico_over_500.svg" alt="">
+                <img class="on" src="images/ico_over_500_white.svg" alt="">
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 500万未満コンテンツ 1 -->
+      <div class="contents js-contents is-visible fade-in" data-type="lower">
+        <div class="bg">
+          <img class="arrow" src="images/img_arrow_under_gold.png" alt="">
+        </div>
+        <div class="wrapper">
+          <section class="compare">
+            <div class="compare_lead">
+              <div class="compare_lead_text">
+                <span>40代</span>で<b class="label">年収500万円未満</b>の
+              </div>
+              <p class="compare_lead_subText">
+                あなたにぴったりの転職サイトはこちら
+              </p>
+            </div>
+            {{> compareTable}}
+          </section>
+        </div>
+      </div>
+
+      <!-- 500万以上コンテンツ 1 -->
+      <div class="contents js-contents" data-type="upper">
+        <div class="bg">
+          <img class="arrow" src="images/img_arrow_under_gold.png" alt="">
+        </div>
+        <div class="wrapper">
+          <section class="compare">
+            <div class="compare_lead">
+              <div class="compare_lead_text">
+                <span>40代</span>で<b class="label">年収500万円以上</b>の
+              </div>
+              <p class="compare_lead_subText">
+                あなたにぴったりの転職サイトはこちら
+              </p>
+            </div>
+            {{> compareTable}}
+          </section>
+        </div>
+      </div>
+
+      {{> jobChangeTrends}}
+
+      <section class="ranking">
+        <div class="header">
+          <div class="SectionTitle">
+            <p class="SectionTitle_lead">
+              <i class="SectionTitle_lead_border -left"></i>
+              <span class="SectionTitle_lead_text">年収500万円<span class="js-wordSwitch">未満</span>の方に最適</span>
+              <i class="SectionTitle_lead_border -right"></i>
+            </p>
+            <h2 class="SectionTitle_title">40代向け転職サイトランキング</h2>
+          </div>
+          <p class="sample_lead">▽ 年収を選択してください ▽</p>
+          <div class="switchButton_wrapper">
+            <button class="switchButton -small js-button is-active" data-type="lower">
+              <span class="switchButton_content">
+                〜500万円未満
+              </span>
+            </button>
+            <button class="switchButton -small js-button" data-type="upper">
+              <span class="switchButton_content">
+                500万円以上〜
+              </span>
+            </button>
+          </div>
+          <img class="arrow" src="images/img_arrow_under_gold.png" alt="">
+
+          <!-- 500万未満コンテンツ 2 -->
+          <div class="contents js-contents is-visible fade-in" data-type="lower">
+            {{> rankingItems}}
+          </div>
+
+          <!-- 500万以上コンテンツ 2 -->
+          <div class="contents js-contents" data-type="upper">
+            {{> rankingItems}}
+          </div>
+        </div>
+      </section>
+
+      {{> searchCategories}}
+
+      {{> whatIsAgent}}
+
+      {{> interviewWithExpert}}
+
+      {{> rankingNo1}}
+    </main>
+
+    {{> footer}}
+  </div>
+  <link rel="stylesheet" href="/override/override.css">
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

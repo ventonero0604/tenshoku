@@ -212,11 +212,12 @@ $(function () {
   }
 
   /* 
-     職種切り替え
+     コンテンツ切り替え
   */
-  if ($(".Format_3").length) {
+  if ($(".Format_2").length || $(".Format_3").length) {
     const buttons = document.querySelectorAll(".js-button");
     const contents = document.querySelectorAll(".js-contents");
+    const wordSwitch = document.querySelector(".js-wordSwitch");
 
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
@@ -245,6 +246,15 @@ $(function () {
             });
           }
         });
+
+        // js-wordSwitchのテキストを切り替え
+        if (wordSwitch && $(".Format_2").length) {
+          if (type === "lower") {
+            wordSwitch.textContent = "未満";
+          } else if (type === "upper") {
+            wordSwitch.textContent = "以上";
+          }
+        }
       });
     });
   }
