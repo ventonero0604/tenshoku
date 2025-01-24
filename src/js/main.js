@@ -101,7 +101,10 @@ $(function () {
   /* 
      比較表の星をfillする
   */
-  if ($(".js-CompareTable").length) {
+  if (
+    $(".js-CompareTable").length ||
+    $(".js-Format_3_b_compare_table").length
+  ) {
     function setRatings() {
       $(".js-rate").each(function () {
         const rateElement = $(this);
@@ -255,5 +258,24 @@ $(function () {
         }
       });
     });
+  }
+
+  /* 
+     コンテンツ切り替え
+  */
+  if ($(".js-Format_3_b_compare_table").length) {
+    const compareTableWrapper = document.querySelector(
+      ".Format_3_b_compare_table_wrapper"
+    );
+
+    if (compareTableWrapper) {
+      compareTableWrapper.addEventListener("scroll", () => {
+        if (compareTableWrapper.scrollLeft > 0) {
+          compareTableWrapper.classList.add("is-scrolled");
+        } else {
+          compareTableWrapper.classList.remove("is-scrolled");
+        }
+      });
+    }
   }
 });

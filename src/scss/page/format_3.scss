@@ -6,6 +6,9 @@
   Fortmat_3 
     - エンジニア
     - ゲーム
+    - 臨床検査技師
+    - 臨床工学技士
+    - 放射線技師
 */
 
 .Format_3 {
@@ -50,6 +53,16 @@
     }
   }
 
+  .lead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--deep-blue, #081059);
+    @include text.h3;
+    margin-bottom: 4px;
+  }
+
   .select {
     background: var(--pale-blue, #f2f7f9);
     padding: 24px 15px;
@@ -92,15 +105,6 @@
     .arrow {
       width: 32px;
       margin-inline: auto;
-    }
-    .lead {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      color: var(--deep-blue, #081059);
-      @include text.h3;
-      margin-bottom: 4px;
     }
     .label {
       color: var(--white, #fff);
@@ -287,6 +291,154 @@
     }
     .switchButton_wrapper {
       margin-block: 14px 18px;
+    }
+  }
+
+  &_b_buttons {
+    display: grid;
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  &_b_button {
+    border-radius: 8px;
+    border: 1px solid var(--gold, #b59443);
+    background: var(--white, #fff);
+    box-shadow: 0px 3px 0px 0px #b59443;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 10px 10px 15px;
+    &_texts {
+      text-align: center;
+    }
+    &_text {
+      @include text.h3;
+      color: var(--deep-blue, #081059);
+      b {
+        @include text.h2;
+        color: var(--turquoise, #168ab1);
+      }
+    }
+    &_subText {
+      color: var(--gold, #b59443);
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  &_b_compare {
+    padding: 30px 0 10px 0;
+    margin: 0 0 50px 0;
+    &_table {
+      margin-top: 20px;
+      &_wrapper {
+        padding-bottom: 10px;
+        margin-inline: 16px;
+        overflow-x: scroll;
+        position: relative;
+        &:after {
+          content: "";
+          display: block;
+          width: 60px;
+          height: 180px;
+          background: center/contain no-repeat
+            url("../../images/btn_scroll_right.png");
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          transition: all 0.2s;
+        }
+        &.is-scrolled {
+          &:after {
+            opacity: 0;
+          }
+        }
+        &::-webkit-scrollbar {
+          height: 12px;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: var(--turquoise, #168ab1);
+          border-radius: 10px;
+        }
+        &::-webkit-scrollbar-track {
+          background-color: var(--pale-blue, #f2f7f9);
+          box-shadow: 0px 1px 1px 0px rgba(65, 90, 98, 0.25) inset;
+          border-radius: 10px;
+        }
+      }
+      th,
+      td {
+        border: 2px solid var(--light-gray, #f0f0f0);
+        white-space: nowrap;
+        vertical-align: middle;
+        width: 160px;
+      }
+
+      th {
+        border: 2px solid var(--light-gray, #f0f0f0);
+        background: var(--deep-blue, #081059);
+        color: white;
+        padding: 14px;
+        white-space: nowrap;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 14px;
+      }
+      td {
+        border: 2px solid var(--light-gray, #f0f0f0);
+        padding: 14px;
+        vertical-align: middle;
+      }
+      &_header {
+        display: grid;
+        place-items: center;
+        gap: 10px;
+        a {
+          color: var(--deep-blue, #081059);
+          padding-bottom: 4px;
+          text-align: center;
+          font-size: 10px;
+          font-weight: 700;
+          border-bottom: 1px dashed var(--deep-blue, #081059);
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          img {
+            width: 14px;
+          }
+        }
+      }
+      &_content {
+        display: grid;
+        place-items: center;
+        width: 160px;
+        &_item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+      .text {
+        font-size: 12px;
+        white-space: wrap;
+        width: 140px;
+      }
+      .value {
+        color: var(--deep-blue, #081059);
+        font-weight: bold;
+        font-size: 12px;
+      }
+      b {
+        color: var(--deep-blue, #081059);
+        @include text.h2;
+      }
+      .Button-small {
+        margin: 0;
+      }
     }
   }
 }

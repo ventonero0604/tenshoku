@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ja">
+{{> head}}
+
+<body>
+  <div class="Wrapper">
+    {{> header}}
+
+    <main class="Format_3">
+      <section class="Kv">
+        <h2>
+          <img src="images/kv_rinshokensa.png" alt="{{altKeyVisual}}">
+        </h2>
+      </section>
+
+      <section class="banners">
+        {{> logoSlider}}
+      </section>
+
+      <section class="Search">
+        {{> search}}
+        <div class="Format_3_b_buttons">
+          <a href="#" class="Format_3_b_button">
+            <img src="images/ico_hoshasen.svg" alt="">
+            <div class="Format_3_b_button_texts">
+              <p class="Format_3_b_button_text">
+                <b>放射線技師</b>はこちら
+              </p>
+              <p class="Format_3_b_button_subText">
+                #常勤　#非常勤　#派遣　#パート
+              </p>
+            </div>
+          </a>
+          <a href="#" class="Format_3_b_button">
+            <img src="images/ico_rinshokogaku.svg" alt="">
+            <div class="Format_3_b_button_texts">
+              <p class="Format_3_b_button_text">
+                <b>臨床工学技士</b>はこちら
+              </p>
+              <p class="Format_3_b_button_subText">
+                #常勤　#非常勤　#派遣　#パート
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <div class="Format_3_b_compare">
+        <div class="SectionTitle">
+          <p class="lead"><span class="label">「臨床検査技師」</span>転職におすすめ</p>
+          <div class="SectionTitle_lead">
+            <i class="SectionTitle_lead_border -left"></i>
+            <h2 class="SectionTitle_title">転職サイト 3社比較</h2>
+            <i class="SectionTitle_lead_border -right"></i>
+          </div>
+        </div>
+        <div class="Format_3_b_compare_table_wrapper">
+          <table class="Format_3_b_compare_table js-Format_3_b_compare_table">
+            <tbody>
+              <tr>
+                <th>サービス</th>
+                <td>
+                  <div class="Format_3_b_compare_table_header">
+                    <img src="images/thumbnail/kensagishi_jinzai_bank.png" alt="">
+                    <a href="#">
+                      検査技師人材バンク
+                      <img src="images/ico_arrow_circle_right_top.svg" alt="">
+                    </a>
+                  </div>
+                </td>
+                <td>
+                  <div class="Format_3_b_compare_table_header">
+                    <img src="images/thumbnail/kensagishi_recruitment.png" alt="">
+                    <a href="#">
+                      検査技師人材バンク
+                      <img src="images/ico_arrow_circle_right_top.svg" alt="">
+                    </a>
+                  </div>
+                </td>
+                <td>
+                  <div class="Format_3_b_compare_table_header">
+                    <img src="images/thumbnail/kensagishi_jinzai_bank.png" alt="">
+                    <a href="#">
+                      検査技師人材バンク
+                      <img src="images/ico_arrow_circle_right_top.svg" alt="">
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>オススメPt</th>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <p class="rate js-rate"><b>4.8</b></p>
+                    {{> smallStarsFlat}}
+                  </div>
+                </td>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <p class="rate js-rate"><b>4.2</b></p>
+                    {{> smallStarsFlat}}
+                  </div>
+                </td>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <p class="rate js-rate"><b>3.8</b></p>
+                    {{> smallStarsFlat}}
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>求人数</th>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <div class="Format_3_b_compare_table_content_item">
+                      <img class="evaluation" src="images/ico_compare_circle_double.svg" alt="">
+                      <p class="value"><b>4,900</b>件</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <div class="Format_3_b_compare_table_content_item">
+                      非公開
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <div class="Format_3_b_compare_table_content_item">
+                      <img class="evaluation" src="images/ico_compare_circle_single.svg" alt="">
+                      <p class="value"><b>900</b>件</p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>特長</th>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <p class="text">
+                      業界TOPクラスの求人数！ 検査技師専門の転職アドバイザーがマンツーマンで徹底サポート
+                    </p>
+                  </div>
+                </td>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <p class="text">
+                      臨床検査技師の非公開求人多数！地域密着型で安心の転職支援サービス
+                    </p>
+                  </div>
+                </td>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <p class="text">
+                      業界TOPクラスの求人数！ 検査技師専門の転職アドバイザーがマンツーマンで徹底サポート
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>対応エリア</th>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <div class="Format_3_b_compare_table_content_item">
+                      <img class="evaluation" src="images/ico_compare_circle_double.svg" alt="">
+                      <p><b>全国</b></p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <div class="Format_3_b_compare_table_content_item">
+                      <img class="evaluation" src="images/ico_compare_circle_double.svg" alt="">
+                      <p><b>全国</b></p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <div class="Format_3_b_compare_table_content_item">
+                      <img class="evaluation" src="images/ico_compare_circle_double.svg" alt="">
+                      <p><b>全国</b></p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>対応職種</th>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <p class="text">
+                      臨床検査技師（MT）
+                    </p>
+                  </div>
+                </td>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <p class="text">
+                      臨床検査技師（MT）
+                    </p>
+                  </div>
+                </td>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <p class="text">
+                      臨床検査技師（MT）
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>雇用形態</th>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <p class="text">
+                      ・常勤<br>
+                      ・非常勤
+                    </p>
+                  </div>
+                </td>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <p class="text">
+                      ・常勤<br>
+                      ・非常勤
+                    </p>
+                  </div>
+                </td>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <p class="text">
+                      ・常勤<br>
+                      ・非常勤
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>公式サイト</th>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <a href="#" class="Button Button-small">公式サイト</a>
+                  </div>
+                </td>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <a href="#" class="Button Button-small">公式サイト</a>
+                  </div>
+                </td>
+                <td>
+                  <div class="Format_3_b_compare_table_content">
+                    <a href="#" class="Button Button-small">公式サイト</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <section class="ranking px-4">
+        <div class="SectionTitle">
+          <p class="SectionTitle_lead">
+            <i class="SectionTitle_lead_border -left"></i>
+            <span class="SectionTitle_lead_text">「臨床検査技師」の転職で使うべき</span>
+            <i class="SectionTitle_lead_border -right"></i>
+          </p>
+          <h2 class="SectionTitle_title">転職エージェント人気ランキング</h2>
+        </div>
+        {{> rankingItems}}
+      </section>
+
+      {{> searchCategories}}
+
+      {{> whatIsAgent}}
+
+      {{> interviewWithExpert}}
+
+      {{> rankingNo1}}
+    </main>
+
+    {{> footer}}
+  </div>
+  <link rel="stylesheet" href="/override/override.css">
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

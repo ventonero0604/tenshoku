@@ -34,6 +34,18 @@ const pageData = {
     altKeyVisual:
       "【PR】50代の転職 転職サイトランキング 後悔しない正しい選び方 TOP5",
   },
+  "rinshokensa.html": {
+    altKeyVisual:
+      "【PR】臨床検査技師編 プロが厳選した転職サイト 後悔しない正しい選び方 TOP3",
+  },
+  "rinshokogaku.html": {
+    altKeyVisual:
+      "【PR】臨床工学技士編 プロが厳選した転職サイト 後悔しない正しい選び方 TOP3",
+  },
+  "hoshasen.html": {
+    altKeyVisual:
+      "【PR】放射線技師編 プロが厳選した転職サイト 後悔しない正しい選び方 TOP3",
+  },
 };
 
 const root = "src";
@@ -71,6 +83,9 @@ export default defineConfig({
         age30: resolve(__dirname, root, "age30.html"),
         age40: resolve(__dirname, root, "age40.html"),
         age50: resolve(__dirname, root, "age50.html"),
+        rinshokensa: resolve(__dirname, root, "rinshokensa.html"),
+        rinshokogaku: resolve(__dirname, root, "rinshokogaku.html"),
+        hoshasen: resolve(__dirname, root, "hoshasen.html"),
         sitemap: resolve(__dirname, root, "sitemap.html"),
       },
     },

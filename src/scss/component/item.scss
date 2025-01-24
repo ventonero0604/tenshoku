@@ -71,7 +71,7 @@
   &_info {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px 14px;
+    gap: 10px;
     margin-top: 24px;
     .item {
       text-align: center;
@@ -85,6 +85,7 @@
         border: 2px solid var(--light-gray, #f0f0f0);
         padding: 8px 8px 12px 8px;
         background: white;
+        font-size: 14px;
       }
     }
   }
@@ -116,7 +117,8 @@
           display: block;
           width: 14px;
           height: 14px;
-          background: center/cover no-repeat url("../..//images/ico_check.svg");
+          background: center/contain no-repeat
+            url("../..//images/ico_check.svg");
         }
       }
     }
@@ -133,6 +135,7 @@
       gap: 20px;
       .image {
         max-width: 116px;
+        min-width: 82px;
         flex: 1;
       }
       .texts {
@@ -160,6 +163,8 @@
       position: absolute;
       top: -14px;
       width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
       span {
         color: var(--deep-blue, #081059);
         @include text.sub;
