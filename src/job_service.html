@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+{{> head}}
+
+<body>
+  <div class="Wrapper">
+    {{> header}}
+
+    <main class="Format_5">
+      <section class="Kv">
+        <h2>
+          <img src="images/kv_job_service.png" alt="{{altKeyVisual}}">
+        </h2>
+      </section>
+
+      <section class="banners">
+        {{> logoSlider}}
+      </section>
+
+      <section class="Search">
+        {{> search}}
+      </section>
+
+      <section class="Format_5_example">
+        <h3 class="Format_5_example_title">〈 こんな方におすすめ 〉</h3>
+        <ul class="Format_5_example_list">
+          <li>
+            フードサービス
+          </li>
+          <li>
+            店舗販売
+          </li>
+          <li>
+            アパレル
+          </li>
+          <li>
+            エンターテイメント
+          </li>
+          <li>
+            食品メーカー
+          </li>
+        </ul>
+      </section>
+
+      <section class="compare">
+        <div class="SectionTitle">
+          <p class="SectionTitle_lead">
+            <i class="SectionTitle_lead_border -left"></i>
+            <span class="SectionTitle_lead_text text-[14px]">「マーケティング」で転職の方におすすめ</span>
+            <i class="SectionTitle_lead_border -right"></i>
+          </p>
+          <h2 class="SectionTitle_title">転職サイト5社比較</h2>
+        </div>
+        {{> compareTable}}
+      </section>
+
+      <section class="ranking px-4 pt-8">
+        <div class="SectionTitle">
+          <p class="SectionTitle_lead">
+            <i class="SectionTitle_lead_border -left"></i>
+            <span class="SectionTitle_lead_text">販売・サービス業希望なら利用したい</span>
+            <i class="SectionTitle_lead_border -right"></i>
+          </p>
+          <h2 class="SectionTitle_title text-[20px]">就職・転職支援サイトBEST5</h2>
+        </div>
+        {{> rankingItems}}
+      </section>
+
+      {{> searchCategories}}
+
+      {{> whatIsAgent}}
+
+      {{> interviewWithExpert}}
+
+      {{> rankingNo1}}
+    </main>
+
+    {{> footer}}
+  </div>
+  <link rel="stylesheet" href="/override/override.css">
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

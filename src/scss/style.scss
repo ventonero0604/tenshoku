@@ -28,11 +28,14 @@
 @use "./ui/rankingNo1.scss";
 @use "./ui/logoSlider.scss";
 @use "./ui/jobChangeTrends.scss";
+@use "./ui/cardScroll.scss";
 
 /* page */
 @use "./page/format_1.scss";
 @use "./page/format_2.scss";
 @use "./page/format_3.scss";
+@use "./page/format_4.scss";
+@use "./page/format_5.scss";
 
 /* libs */
 @use "./libs/swiper.scss";

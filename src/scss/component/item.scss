@@ -20,14 +20,26 @@
       &:before {
         content: "";
         display: block;
+        width: 45px;
+        height: 61px;
       }
     }
     &-no1 {
       &:before {
-        width: 45px;
-        height: 61px;
         background: center/cover no-repeat
           url("../..//images/ico_ranking_1.svg");
+      }
+    }
+    &-no2 {
+      &:before {
+        background: center/cover no-repeat
+          url("../..//images/ico_ranking_2.svg");
+      }
+    }
+    &-no3 {
+      &:before {
+        background: center/cover no-repeat
+          url("../..//images/ico_ranking_3.svg");
       }
     }
     &-crown {

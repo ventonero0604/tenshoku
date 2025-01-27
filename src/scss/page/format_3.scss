@@ -4,11 +4,9 @@
 
 /*
   Fortmat_3 
-    - エンジニア
-    - ゲーム
-    - 臨床検査技師
-    - 臨床工学技士
-    - 放射線技師
+    - エンジニア・ゲーム
+    - 医療専門業種
+    - ハイクラス・一般職種
 */
 
 .Format_3 {
@@ -308,8 +306,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    gap: 10px;
     padding: 10px 10px 15px;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      width: 9px;
+      height: 18px;
+      background: center/contain no-repeat
+        url("../../images/ico_arrow_right_navy.svg");
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
     &_texts {
       text-align: center;
     }
@@ -438,6 +449,129 @@
       }
       .Button-small {
         margin: 0;
+      }
+    }
+  }
+
+  &_c {
+    &_howto {
+      margin-top: 30px;
+      &_container {
+        padding: 20px 15px 36px;
+        display: grid;
+        gap: 14px;
+      }
+      &_content {
+        display: flex;
+        gap: 8px;
+        &_header {
+          background: var(--deep-blue, #081059);
+          padding: 7px;
+          writing-mode: vertical-rl;
+          text-orientation: upright;
+          color: white;
+          letter-spacing: 5px;
+          display: grid;
+          place-items: center;
+          &.-turquoise {
+            background: var(--turquoise, #168ab1);
+          }
+        }
+        &_item {
+          display: grid;
+          gap: 8px;
+        }
+        &_body {
+          display: flex;
+          gap: 8px;
+        }
+        &_texts {
+          background: #f2f7f9;
+          padding: 10px 13px 16px;
+          position: relative;
+          &:after {
+            display: block;
+            content: "";
+            width: 25px;
+            height: 20px;
+            background: center/contain no-repeat
+              url("../../images/img_arrow_right_gold.png");
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -12px;
+            z-index: 1;
+          }
+          &_title {
+            border-radius: 6px;
+            border: 2px solid var(--deep-blue, #081059);
+            background: var(--deep-blue, #081059);
+            color: white;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            &.-turquoise {
+              background: var(--turquoise, #168ab1);
+              border-color: var(--turquoise, #168ab1);
+            }
+            span {
+              width: 27px;
+              height: 26px;
+              flex-shrink: 0;
+              border-radius: 4px 0 0 4px;
+              background: var(--gold, #b59443);
+              display: grid;
+              place-items: center;
+            }
+            b {
+              text-align: center;
+              font-size: 12px;
+              display: block;
+              width: 100%;
+              font-weight: 600;
+              padding-inline: 4px;
+            }
+          }
+          &_text {
+            color: var(--dark-gray, #2b2b2b);
+            @include text.sub;
+            margin-top: 14px;
+          }
+        }
+        &_recommend {
+          padding: 10px;
+          border: 2px solid var(--pale-blue, #f2f7f9);
+          background: var(--white, #fff);
+          display: grid;
+          place-items: center;
+          &_wrapper {
+            display: grid;
+            place-items: center;
+            gap: 8px;
+          }
+          .thumb {
+            width: 114px;
+            height: 95px;
+            img {
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .link {
+            color: var(--deep-blue, #081059);
+            text-align: center;
+            font-size: 10px;
+            font-weight: 700;
+            border-bottom: 1px dashed var(--deep-blue, #081059);
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding-bottom: 4px;
+            line-height: 1.2;
+          }
+        }
       }
     }
   }

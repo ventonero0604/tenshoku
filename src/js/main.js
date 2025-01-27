@@ -101,10 +101,7 @@ $(function () {
   /* 
      比較表の星をfillする
   */
-  if (
-    $(".js-CompareTable").length ||
-    $(".js-Format_3_b_compare_table").length
-  ) {
+  if ($(".js-rate").length) {
     function setRatings() {
       $(".js-rate").each(function () {
         const rateElement = $(this);
@@ -205,6 +202,7 @@ $(function () {
       centeredSlides: true,
       slidesPerView: 1.3,
       spaceBetween: 20,
+      loop: $(".js-swiper-center").length,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,

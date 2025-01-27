@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+{{> head}}
+
+<body>
+  <div class="Wrapper">
+    {{> header}}
+
+    <main class="Format_4">
+      <section class="Kv">
+        <h2>
+          <img src="images/kv_dispatch_service.png" alt="{{altKeyVisual}}">
+        </h2>
+      </section>
+
+      <section class="banners">
+        {{> logoSlider}}
+      </section>
+
+      <section class="Search">
+        {{> search}}
+      </section>
+
+      <section class="compare">
+        <div class="SectionTitle">
+          <p class="SectionTitle_lead">
+            <i class="SectionTitle_lead_border -left"></i>
+            <span class="SectionTitle_lead_text">学歴不問・未経験OK！</span>
+            <i class="SectionTitle_lead_border -right"></i>
+          </p>
+          <h2 class="SectionTitle_title">派遣の仕事探すならこの5社</h2>
+        </div>
+        {{> compareTable}}
+      </section>
+
+      <section class="CardScroll">
+        <div class="SectionTitle">
+          <p class="text-deep-blue font-bold text-[18px] mb-1">高時給・大手企業の派遣求人も多数</p>
+          <h3 class="SectionTitle_title">派遣求人例</h3>
+        </div>
+        <!-- 参照するべきコンテンツがなさそう？ -->
+        <ul class="CardScroll_list">
+          <li class="CardScroll_list_item">
+            <div class="CardScroll_list_item_header">店舗接客</div>
+            <figure class="CardScroll_list_item_image">
+              <img src="images/service_img_sample_1.jpg" alt="">
+            </figure>
+            <div class="CardScroll_list_item_body">
+              <div class="CardScroll_list_item_info">
+                <p class="CardScroll_list_item_info_title">
+                  職種
+                </p>
+                <p class="CardScroll_list_item_info_text">
+                  正社員【販売サービス】
+                </p>
+              </div>
+              <div class="CardScroll_list_item_info">
+                <p class="CardScroll_list_item_info_title">
+                  月給
+                </p>
+                <p class="CardScroll_list_item_info_text">
+                  <span>31</span>万円〜
+                </p>
+              </div>
+              <ul class="CardScroll_list_item_list">
+                <li class="CardScroll_list_item_list_item">
+                  年間休日125日
+                </li>
+                <li class="CardScroll_list_item_list_item">
+                  ボーナスあり
+                </li>
+              </ul>
+              <a href="#" class="Button Button-small">求人を紹介してもらう</a>
+            </div>
+          </li>
+          <li class="CardScroll_list_item">
+            <div class="CardScroll_list_item_header">カーディーラー販売</div>
+            <figure class="CardScroll_list_item_image">
+              <img src="images/service_img_sample_2.jpg" alt="">
+            </figure>
+            <div class="CardScroll_list_item_body">
+              <div class="CardScroll_list_item_info">
+                <p class="CardScroll_list_item_info_title">
+                  職種
+                </p>
+                <p class="CardScroll_list_item_info_text">
+                  正社員【販売サービス】
+                </p>
+              </div>
+              <div class="CardScroll_list_item_info">
+                <p class="CardScroll_list_item_info_title">
+                  月給
+                </p>
+                <p class="CardScroll_list_item_info_text">
+                  <span>30</span>万円〜
+                </p>
+              </div>
+              <ul class="CardScroll_list_item_list">
+                <li class="CardScroll_list_item_list_item">
+                  未経験OK
+                </li>
+                <li class="CardScroll_list_item_list_item">
+                  住宅手当あり
+                </li>
+              </ul>
+              <a href="#" class="Button Button-small">求人を紹介してもらう</a>
+            </div>
+          </li>
+          <li class="CardScroll_list_item">
+            <div class="CardScroll_list_item_header">アパレル販売員</div>
+            <figure class="CardScroll_list_item_image">
+              <img src="images/service_img_sample_3.jpg" alt="">
+            </figure>
+            <div class="CardScroll_list_item_body">
+              <div class="CardScroll_list_item_info">
+                <p class="CardScroll_list_item_info_title">
+                  職種
+                </p>
+                <p class="CardScroll_list_item_info_text">
+                  正社員【販売サービス】
+                </p>
+              </div>
+              <div class="CardScroll_list_item_info">
+                <p class="CardScroll_list_item_info_title">
+                  月給
+                </p>
+                <p class="CardScroll_list_item_info_text">
+                  <span>28</span>万円〜
+                </p>
+              </div>
+              <ul class="CardScroll_list_item_list">
+                <li class="CardScroll_list_item_list_item">
+                  残業なし
+                </li>
+                <li class="CardScroll_list_item_list_item">
+                  ボーナスあり
+                </li>
+              </ul>
+              <a href="#" class="Button Button-small">求人を紹介してもらう</a>
+            </div>
+          </li>
+          <li class="CardScroll_list_item">
+            <div class="CardScroll_list_item_header">携帯販売職</div>
+            <figure class="CardScroll_list_item_image">
+              <img src="images/service_img_sample_4.jpg" alt="">
+            </figure>
+            <div class="CardScroll_list_item_body">
+              <div class="CardScroll_list_item_info">
+                <p class="CardScroll_list_item_info_title">
+                  職種
+                </p>
+                <p class="CardScroll_list_item_info_text">
+                  正社員【販売サービス】
+                </p>
+              </div>
+              <div class="CardScroll_list_item_info">
+                <p class="CardScroll_list_item_info_title">
+                  月給
+                </p>
+                <p class="CardScroll_list_item_info_text">
+                  <span>24</span>万円〜
+                </p>
+              </div>
+              <ul class="CardScroll_list_item_list">
+                <li class="CardScroll_list_item_list_item">
+                  時短勤務OK
+                </li>
+                <li class="CardScroll_list_item_list_item">
+                  福利厚生充実
+                </li>
+              </ul>
+              <a href="#" class="Button Button-small">求人を紹介してもらう</a>
+            </div>
+          </li>
+          <li class="CardScroll_list_item">
+            <div class="CardScroll_list_item_header">商品のPRスタッフ</div>
+            <figure class="CardScroll_list_item_image">
+              <img src="images/service_img_sample_5.jpg" alt="">
+            </figure>
+            <div class="CardScroll_list_item_body">
+              <div class="CardScroll_list_item_info">
+                <p class="CardScroll_list_item_info_title">
+                  職種
+                </p>
+                <p class="CardScroll_list_item_info_text">
+                  正社員【販売サービス】
+                </p>
+              </div>
+              <div class="CardScroll_list_item_info">
+                <p class="CardScroll_list_item_info_title">
+                  月給
+                </p>
+                <p class="CardScroll_list_item_info_text">
+                  <span>26</span>万円〜
+                </p>
+              </div>
+              <ul class="CardScroll_list_item_list">
+                <li class="CardScroll_list_item_list_item">
+                  社員寮完備
+                </li>
+                <li class="CardScroll_list_item_list_item">
+                  未経験歓迎
+                </li>
+              </ul>
+              <a href="#" class="Button Button-small">求人を紹介してもらう</a>
+            </div>
+          </li>
+          <li class="CardScroll_list_item">
+            <div class="CardScroll_list_item_header">飲食店スタッフ</div>
+            <figure class="CardScroll_list_item_image">
+              <img src="images/service_img_sample_6.jpg" alt="">
+            </figure>
+            <div class="CardScroll_list_item_body">
+              <div class="CardScroll_list_item_info">
+                <p class="CardScroll_list_item_info_title">
+                  職種
+                </p>
+                <p class="CardScroll_list_item_info_text">
+                  正社員【販売サービス】
+                </p>
+              </div>
+              <div class="CardScroll_list_item_info">
+                <p class="CardScroll_list_item_info_title">
+                  月給
+                </p>
+                <p class="CardScroll_list_item_info_text">
+                  <span>33</span>万円〜
+                </p>
+              </div>
+              <ul class="CardScroll_list_item_list">
+                <li class="CardScroll_list_item_list_item">
+                  完全週休2日制
+                </li>
+                <li class="CardScroll_list_item_list_item">
+                  髪型自由
+                </li>
+              </ul>
+              <a href="#" class="Button Button-small">求人を紹介してもらう</a>
+            </div>
+          </li>
+        </ul>
+        <p class="CardScroll_text">
+          ※上記は求人例となります。最新の求人についてはサービス公式サイトでご確認ください。
+        </p>
+      </section>
+
+      <section class="ranking px-4 pt-8">
+        <div class="SectionTitle">
+          <p class="SectionTitle_lead">
+            <i class="SectionTitle_lead_border -left"></i>
+            <span class="SectionTitle_lead_text">販売・サービス業希望なら利用したい</span>
+            <i class="SectionTitle_lead_border -right"></i>
+          </p>
+          <h2 class="SectionTitle_title text-[20px]">就職・転職支援サイトBEST5</h2>
+        </div>
+        {{> rankingItems}}
+      </section>
+
+      {{> searchCategories}}
+
+      {{> whatIsAgent}}
+
+      {{> interviewWithExpert}}
+
+      {{> rankingNo1}}
+    </main>
+
+    {{> footer}}
+  </div>
+  <link rel="stylesheet" href="/override/override.css">
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

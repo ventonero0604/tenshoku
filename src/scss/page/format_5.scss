@@ -1,0 +1,46 @@
+@use "../foundation/pxvw.scss" as vwsp;
+@use "../foundation/breakPoint.scss" as bp;
+@use "../foundation/text.scss" as text;
+
+/*
+  Fortmat_5 
+    - 女性・一般業種
+*/
+
+.Format_5 {
+  &_example {
+    border-radius: 8px;
+    background: var(--pale-blue, #f2f7f9);
+    padding: 30px 10px 24px;
+    position: relative;
+    margin: 30px 16px 0;
+    &_title {
+      color: var(--turquoise, #168ab1);
+      @include text.h3;
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &_list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 8px;
+      li {
+        border-radius: 6px;
+        background: var(--white, #fff);
+        min-width: 120px;
+        padding: 4px 8px 5px;
+        color: var(--deep-blue, #081059);
+        text-align: center;
+      }
+    }
+  }
+
+  .compare {
+    padding: 28px 15px 35px;
+    display: grid;
+    gap: 24px;
+  }
+}

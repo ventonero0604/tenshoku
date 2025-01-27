@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+{{> head}}
+
+<body>
+  <div class="Wrapper">
+    {{> header}}
+
+    <main class="Format_4">
+      <section class="Kv">
+        <h2>
+          <img src="images/kv_shinsotsu.png" alt="{{altKeyVisual}}">
+        </h2>
+      </section>
+
+      <section class="banners">
+        {{> logoSlider}}
+      </section>
+
+      <section class="Search">
+        {{> search}}
+        <a href="#" class="Format_4_button">
+          26卒 新卒学生の方はこちら
+        </a>
+      </section>
+
+      <section class="compare">
+        <div class="SectionTitle">
+          <p class="SectionTitle_lead">
+            <i class="SectionTitle_lead_border -left"></i>
+            <span class="SectionTitle_lead_text">ハローワークよりも断然おすすめ</span>
+            <i class="SectionTitle_lead_border -right"></i>
+          </p>
+          <h2 class="SectionTitle_title">就職・転職支援サービス比較</h2>
+        </div>
+        {{> compareTable}}
+      </section>
+
+      <section class="Format_4_difference">
+        <div class="header">
+          <img src="images/ico_difference.svg" alt="" class="ico">
+          <h3 class="title">
+            <span class="text-gold">「ハローワーク」</span>と<span class="text-deep-blue">「就職エージェント」</span><br>
+            の違いを比較
+          </h3>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th class="bg-gold">ハローワーク</th>
+                <th class="bg-deep-blue">就職エージェント</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>求人の質</th>
+                <td>
+                  <div>
+                    <img src="images/ico_compare_triangle.svg" alt="">
+                    給与低めの<br>
+                    求人多め
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <img src="images/ico_compare_circle_double.svg" alt="">
+                    未経験向け<br>
+                    優良求人多数
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>求人の数</th>
+                <td>
+                  <div>
+                    <img src="images/ico_compare_triangle.svg" alt="">
+                    求人数が膨大で<br>
+                    地方もカバー
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <img src="images/ico_compare_circle_single.svg" alt="">
+                    求人数は少ないが<br>
+                    質が高い
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>サポート</th>
+                <td>
+                  <div>
+                    <img src="images/ico_compare_circle_single.svg" alt="">
+                    履歴書添削や<br>
+                    面接練習のみ
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <img src="images/ico_compare_circle_double.svg" alt="">
+                    応募〜内定後まで<br>
+                    すべて無料支援
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>内定までの<br>
+                  スピード</th>
+                <td>
+                  <div>
+                    <img src="images/ico_compare_triangle.svg" alt="">
+                    1〜2ヶ月ほどで<br>
+                    内定
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <img src="images/ico_compare_circle_double.svg" alt="">
+                    最短2週間で<br>
+                    内定獲得も
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <aside class="point">
+            <figure class="image">
+              <img src="images/img_difference.png" alt="">
+            </figure>
+            <div class="texts">
+              <p class="title">POINT</p>
+              <p class="text">
+                特に就職エージェントはメリットが多く、<span>学歴不安な方や未経験の方でも就活のプロが徹底サポートしてくれる</span>ので一度試しに利用してみてはいかがでしょうか！
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="Format_4_carousel">
+        <p class="lead">
+          学歴・経歴に自信がなくても大丈夫！
+        </p>
+        <h3 class="title">
+          未経験から多くの方が<br>
+          正社員就職に成功しています
+        </h3>
+        <div class="swiper js-swiper-center">
+          <div class="swiper-wrapper">
+            <aside class="swiper-slide card">
+              <div class="header">
+                <p class="info">
+                  <span>今まで</span>
+                  <b>飲食店アルバイト</b>
+                </p>
+                <p class="info">
+                  <span>転職後</span>
+                  <b>IT営業職</b>
+                </p>
+              </div>
+              <div class="body">
+                <figure class="image">
+                  <img src="images/img_illust_woman_2.png" alt="">
+                </figure>
+                <div class="texts">
+                  <p class="title">
+                    Oさん 24歳
+                  </p>
+                  <p class="text">
+                    ダンス以外やりたいことがなく、何をしたらいいかわからない状況でしたが、アドバイザーの方と一緒に<span>やりたい仕事を見つけること</span>ができました。面接までスムーズに進みました。
+                  </p>
+                </div>
+              </div>
+            </aside>
+            <aside class="swiper-slide card">
+              <div class="header">
+                <p class="info">
+                  <span>今まで</span>
+                  <b>飲食店アルバイト</b>
+                </p>
+                <p class="info">
+                  <span>転職後</span>
+                  <b>IT営業職</b>
+                </p>
+              </div>
+              <div class="body">
+                <figure class="image">
+                  <img src="images/img_illust_man_3.png" alt="">
+                </figure>
+                <div class="texts">
+                  <p class="title">
+                    Oさん 24歳
+                  </p>
+                  <p class="text">
+                    ダンス以外やりたいことがなく、何をしたらいいかわからない状況でしたが、アドバイザーの方と一緒に<span>やりたい仕事を見つけること</span>ができました。面接までスムーズに進みました。
+                  </p>
+                </div>
+              </div>
+            </aside>
+            <aside class="swiper-slide card">
+              <div class="header">
+                <p class="info">
+                  <span>今まで</span>
+                  <b>飲食店アルバイト</b>
+                </p>
+                <p class="info">
+                  <span>転職後</span>
+                  <b>IT営業職</b>
+                </p>
+              </div>
+              <div class="body">
+                <figure class="image">
+                  <img src="images/img_illust_man_1.png" alt="">
+                </figure>
+                <div class="texts">
+                  <p class="title">
+                    Oさん 24歳
+                  </p>
+                  <p class="text">
+                    ダンス以外やりたいことがなく、何をしたらいいかわからない状況でしたが、アドバイザーの方と一緒に<span>やりたい仕事を見つけること</span>ができました。面接までスムーズに進みました。
+                  </p>
+                </div>
+              </div>
+            </aside>
+            <aside class="swiper-slide card">
+              <div class="header">
+                <p class="info">
+                  <span>今まで</span>
+                  <b>飲食店アルバイト</b>
+                </p>
+                <p class="info">
+                  <span>転職後</span>
+                  <b>IT営業職</b>
+                </p>
+              </div>
+              <div class="body">
+                <figure class="image">
+                  <img src="images/img_illust_woman_1.png" alt="">
+                </figure>
+                <div class="texts">
+                  <p class="title">
+                    Oさん 24歳
+                  </p>
+                  <p class="text">
+                    ダンス以外やりたいことがなく、何をしたらいいかわからない状況でしたが、アドバイザーの方と一緒に<span>やりたい仕事を見つけること</span>ができました。面接までスムーズに進みました。
+                  </p>
+                </div>
+              </div>
+            </aside>
+            <aside class="swiper-slide card">
+              <div class="header">
+                <p class="info">
+                  <span>今まで</span>
+                  <b>飲食店アルバイト</b>
+                </p>
+                <p class="info">
+                  <span>転職後</span>
+                  <b>IT営業職</b>
+                </p>
+              </div>
+              <div class="body">
+                <figure class="image">
+                  <img src="images/img_illust_man_2.png" alt="">
+                </figure>
+                <div class="texts">
+                  <p class="title">
+                    Oさん 24歳
+                  </p>
+                  <p class="text">
+                    ダンス以外やりたいことがなく、何をしたらいいかわからない状況でしたが、アドバイザーの方と一緒に<span>やりたい仕事を見つけること</span>ができました。面接までスムーズに進みました。
+                  </p>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="ranking px-4 pt-8">
+        <div class="SectionTitle">
+          <p class="SectionTitle_lead">
+            <i class="SectionTitle_lead_border -left"></i>
+            <span class="SectionTitle_lead_text">未経験でも正社員を目指せる</span>
+            <i class="SectionTitle_lead_border -right"></i>
+          </p>
+          <h2 class="SectionTitle_title text-[20px]">就職・転職支援サービスランキング</h2>
+        </div>
+        {{> rankingItems}}
+      </section>
+
+      {{> searchCategories}}
+
+      {{> whatIsAgent}}
+
+      {{> interviewWithExpert}}
+
+      {{> rankingNo1}}
+    </main>
+
+    {{> footer}}
+  </div>
+  <link rel="stylesheet" href="/override/override.css">
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

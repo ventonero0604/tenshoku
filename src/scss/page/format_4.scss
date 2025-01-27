@@ -1,0 +1,280 @@
+@use "../foundation/pxvw.scss" as vwsp;
+@use "../foundation/breakPoint.scss" as bp;
+@use "../foundation/text.scss" as text;
+
+/*
+  Fortmat_4 
+    - 未経験層
+    - 事務・販売
+    - 派遣
+*/
+
+.Format_4 {
+  &_button {
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--white, #fff);
+    background: var(--white, #fff);
+    padding: 10px 10px;
+    color: var(--deep-blue, #081059);
+    position: relative;
+    height: 66px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    @include text.h3;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 24px;
+      transform: translateY(-50%);
+      background: center/cover no-repeat
+        url("../../images/ico_arrow_right_navy.svg");
+      width: 9px;
+      height: 18px;
+    }
+  }
+
+  &_b {
+    &_button {
+      margin-top: 16px;
+      border-radius: 8px;
+      border: 1px solid var(--gold, #b59443);
+      background: var(--white, #fff);
+      box-shadow: 0px 3px 0px 0px #b59443;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 10px 15px;
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        width: 9px;
+        height: 18px;
+        background: center/contain no-repeat
+          url("../../images/ico_arrow_right_navy.svg");
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &_text {
+        @include text.h3;
+        color: var(--deep-blue, #081059);
+        b {
+          @include text.h2;
+          color: var(--turquoise, #168ab1);
+        }
+      }
+    }
+  }
+
+  .compare {
+    padding: 28px 15px 35px;
+    display: grid;
+    gap: 24px;
+  }
+
+  &_carousel {
+    background: var(--light-gray, #f0f0f0);
+    padding-block: 30px 30px;
+    .lead {
+      color: var(--deep-blue, #081059);
+      text-align: center;
+      @include text.h3;
+    }
+    .title {
+      color: var(--gold, #b59443);
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px; /* 125% */
+      margin-top: 10px;
+    }
+    .swiper {
+      margin-top: 28px;
+      padding-bottom: 46px;
+      --swiper-theme-color: var(--turquoise);
+      --swiper-pagination-bullet-size: 14px;
+    }
+    .card {
+      box-shadow: 0px 2px 4px rgba(68, 68, 68, 0.1);
+      border-radius: 10px;
+      background: var(--white, #fff);
+      overflow: hidden;
+      .header {
+        background: linear-gradient(90deg, #081059 0%, #168ab1 100%);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-block: 8px;
+        .info {
+          color: var(--white, #fff);
+          text-align: center;
+          font-size: 14px;
+          font-weight: 700;
+          span {
+            color: #dcbd6f;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 700;
+            display: block;
+          }
+        }
+        .info + .info {
+          position: relative;
+          &:before {
+            content: "";
+            display: block;
+            width: 14px;
+            height: 17px;
+            background: center/contain no-repeat
+              url("../../images/img_arrow_right_white.png");
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -7px;
+          }
+        }
+      }
+      .body {
+        padding: 16px 24px;
+        display: flex;
+        gap: 10px;
+        .image {
+          width: 80px;
+          height: 127px;
+          flex-shrink: 0;
+          img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .texts {
+          display: grid;
+          gap: 6px;
+          .title {
+            color: var(--deep-blue, #081059);
+            font-size: 16px;
+            font-weight: 700;
+            text-align: left;
+            margin: unset;
+          }
+          .text {
+            @include text.sub;
+            span {
+              font-weight: bold;
+              color: var(--turquoise, #168ab1);
+            }
+          }
+        }
+      }
+    }
+  }
+  &_difference {
+    background: var(--pale-blue, #f2f7f9);
+    padding: 20px 15px 40px;
+    .header {
+      .ico {
+        margin-bottom: 8px;
+      }
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: var(--deep-blue, #081059);
+      font-weight: bold;
+      span {
+        font-size: 19px;
+      }
+    }
+    table {
+      margin-top: 18px;
+      width: 100%;
+      thead {
+        th {
+          font-size: 14px;
+          font-weight: bold;
+          color: white;
+          padding: 14px;
+          text-align: center;
+        }
+      }
+      tbody {
+        th {
+          border: 2px solid var(--light-gray, #f0f0f0);
+          background: var(--deep-blue, #081059);
+          color: white;
+          padding: 5px;
+          vertical-align: middle;
+          font-size: 13px;
+          text-align: center;
+        }
+        td {
+          font-weight: bold;
+          padding: 12px;
+          background: white;
+          border: 2px solid var(--light-gray, #f0f0f0);
+          div {
+            display: grid;
+            place-items: center;
+            gap: 5px;
+            color: var(--dark-gray, #2b2b2b);
+            font-size: 14px;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+    .point {
+      margin-top: 34px;
+      display: flex;
+      align-items: center;
+      .image {
+        width: 132px;
+        flex-shrink: 0;
+        z-index: 1;
+        position: relative;
+      }
+      .texts {
+        border-radius: 8px;
+        background: var(--white, #fff);
+        margin-left: -10px;
+        padding: 0 14px 10px 20px;
+        .title {
+          color: var(--deep-blue, #081059);
+          font-size: 18px;
+          font-weight: 700;
+          text-align: left;
+          display: flex;
+          align-items: flex-end;
+          gap: 8px;
+          &:before {
+            content: "";
+            display: block;
+            width: 15px;
+            height: 33px;
+            background: center/contain no-repeat
+              url("../../images/ico_label.svg");
+          }
+        }
+        .text {
+          color: var(--dark-gray, #2b2b2b);
+          font-weight: normal;
+          font-size: 15px;
+          text-align: left;
+          margin-top: 10px;
+          span {
+            color: var(--turquoise, #168ab1);
+            font-weight: bold;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
