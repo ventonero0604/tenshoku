@@ -148,6 +148,10 @@ const pageData = {
   },
   "job_ad.html": {
     altKeyVisual:
+      "【PR】失敗しない転職サイトの決定版 転職サイトランキング 広告・マスコミ職種",
+  },
+  "job_human_resource.html": {
+    altKeyVisual:
       "【PR】失敗しない転職サイトの決定版 転職サイトランキング 人材・HR職種",
   },
   "job_insuarance.html": {
@@ -219,6 +223,7 @@ export default defineConfig({
         job_woman: resolve(__dirname, root, "job_woman.html"),
         job_consulting: resolve(__dirname, root, "job_consulting.html"),
         job_it: resolve(__dirname, root, "job_it.html"),
+        job_machinery: resolve(__dirname, root, "job_machinery.html"),
         job_trading_company: resolve(
           __dirname,
           root,
@@ -227,6 +232,7 @@ export default defineConfig({
         job_service: resolve(__dirname, root, "job_service.html"),
         job_trip: resolve(__dirname, root, "job_trip.html"),
         job_ad: resolve(__dirname, root, "job_ad.html"),
+        job_human_resource: resolve(__dirname, root, "job_human_resource.html"),
         job_insuarance: resolve(__dirname, root, "job_insuarance.html"),
         job_real_estate: resolve(__dirname, root, "job_real_estate.html"),
         sitemap: resolve(__dirname, root, "sitemap.html"),
