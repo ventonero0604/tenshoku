@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+{{> head}}
+
+<body>
+  <div class="Wrapper">
+    {{> header}}
+
+    <main class="Format_6">
+      <section class="Kv">
+        <h2>
+          <img src="images/kv_remote.png" alt="{{altKeyVisual}}">
+        </h2>
+      </section>
+
+      <section class="banners">
+        {{> logoSlider}}
+      </section>
+
+      <section class="Search">
+        {{> search}}
+      </section>
+
+      <section class="Format_6_contents">
+        <div class="SectionTitle">
+          <p class="SectionTitle_lead">
+            リモート/在宅ワークなら
+          </p>
+          <h2 class="SectionTitle_title">この<span>2社</span>での転職がおすすめ</h2>
+        </div>
+        <ul class="Format_6_list">
+          <li class="Format_6_list_item">
+            <div class="Format_6_list_item_header">
+              <figure class="image">
+                <img src="images/logo/doda_small.png" alt="">
+              </figure>
+              <div class="amount">
+                <p class="amount_title">
+                  公開求人数
+                </p>
+                <p class="amount_text">
+                  約200,000件
+                </p>
+              </div>
+            </div>
+            <div class="Format_6_list_item_texts">
+              <p class="text">
+                在宅勤務可の求人数がとにかく豊富！幅広い年収の方に対応
+              </p>
+              <small>
+                ※2023年3月時点、非公開求人を含む<br>
+                ※2024年 オリコン顧客満足度Ⓡ調査 転職エージェント 20代 第1位
+              </small>
+            </div>
+            <a href="#" class="Button Button-full"><span><b>詳細を見る</b>（公式サイトへ）</span></a>
+          </li>
+          <li class="Format_6_list_item">
+            <div class="Format_6_list_item_header">
+              <figure class="image">
+                <img src="images/logo/bizreach_small.png" alt="">
+              </figure>
+              <div class="amount">
+                <p class="amount_title">
+                  公開求人数
+                </p>
+                <p class="amount_text">
+                  約200,000件
+                </p>
+              </div>
+            </div>
+            <div class="Format_6_list_item_texts">
+              <p class="text">
+                在宅勤務可の求人数がとにかく豊富！幅広い年収の方に対応
+              </p>
+              <small>
+                ※2023年3月時点、非公開求人を含む<br>
+                ※2024年 オリコン顧客満足度Ⓡ調査 転職エージェント 20代 第1位
+              </small>
+            </div>
+            <a href="#" class="Button Button-full"><span><b>詳細を見る</b>（公式サイトへ）</span></a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="ranking px-4 pt-8">
+        <div class="SectionTitle">
+          <p class="SectionTitle_lead">
+            <i class="SectionTitle_lead_border -left"></i>
+            <span class="SectionTitle_lead_text">リモート/在宅ワークなら利用したい</span>
+            <i class="SectionTitle_lead_border -right"></i>
+          </p>
+          <h2 class="SectionTitle_title">転職エージェントランキング</h2>
+        </div>
+        {{> rankingItems}}
+      </section>
+
+      {{> searchCategories}}
+
+      {{> whatIsAgent}}
+
+      {{> interviewWithExpert}}
+
+      {{> rankingNo1}}
+    </main>
+
+    {{> footer}}
+  </div>
+  <link rel="stylesheet" href="/override/override.css">
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

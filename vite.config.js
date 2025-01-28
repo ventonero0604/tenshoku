@@ -162,6 +162,22 @@ const pageData = {
     altKeyVisual:
       "【PR】失敗しない転職サイトの決定版 転職サイトランキング 不動産・建設職種",
   },
+  "job_construction.html": {
+    altKeyVisual:
+      "【PR】失敗しない転職サイトの決定版 転職サイトランキング 不動産・建設職種",
+  },
+  "working_mother.html": {
+    altKeyVisual:
+      "【PR】みんなが使っているのはコレ 転職エージェントランキング 働くママ編",
+  },
+  "remote.html": {
+    altKeyVisual:
+      "【PR】みんなが使っているのはコレ 転職エージェントランキング リモートワーク編",
+  },
+  "overseas.html": {
+    altKeyVisual:
+      "【PR】みんなが使っているのはコレ 転職エージェントランキング 海外移住者向け",
+  },
 };
 
 const root = "src";
@@ -235,6 +251,10 @@ export default defineConfig({
         job_human_resource: resolve(__dirname, root, "job_human_resource.html"),
         job_insuarance: resolve(__dirname, root, "job_insuarance.html"),
         job_real_estate: resolve(__dirname, root, "job_real_estate.html"),
+        job_construction: resolve(__dirname, root, "job_construction.html"),
+        working_mother: resolve(__dirname, root, "working_mother.html"),
+        remote: resolve(__dirname, root, "remote.html"),
+        overseas: resolve(__dirname, root, "overseas.html"),
         sitemap: resolve(__dirname, root, "sitemap.html"),
       },
     },
