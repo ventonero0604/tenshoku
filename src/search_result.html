@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+{{> head}}
+
+<body>
+  <div class="Wrapper">
+    {{> header}}
+
+    <main class="Format_7">
+      <section class="Format_7_query">
+        <div class="Format_7_query_header">
+          <h3 class="Format_7_query_header_title">現在の検索条件</h3>
+          <a href="#" class="Format_7_query_header_retry">
+            <figure class="Format_7_query_header_retry_icon">
+              <img src="images/ico_retry.svg" alt="">
+            </figure>
+            <p class="Format_7_query_header_retry_text">
+              検索条件を変更
+            </p>
+          </a>
+        </div>
+        <div class="Format_7_query_body">
+          <ul class="Format_7_query_body_list">
+            <li class="Format_7_query_body_item">
+              <p class="Format_7_query_body_item_title">現在のご年齢</p>
+              <p class="Format_7_query_body_item_text">〜24歳</p>
+            </li>
+            <li class="Format_7_query_body_item">
+              <p class="Format_7_query_body_item_title">現在の雇用形態</p>
+              <p class="Format_7_query_body_item_text">正社員</p>
+            </li>
+            <li class="Format_7_query_body_item">
+              <p class="Format_7_query_body_item_title">現在のご年収</p>
+              <p class="Format_7_query_body_item_text">400〜499万円</p>
+            </li>
+            <li class="Format_7_query_body_item">
+              <p class="Format_7_query_body_item_title">希望の職種</p>
+              <p class="Format_7_query_body_item_text">事務・アシスタント</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 検索結果あり -->
+      <section class="Format_7_result">
+        <div class="Format_7_result_header">
+          <figure class="Format_7_result_header_arrow">
+            <img src="images/img_arrow_under_gold.png" alt="">
+          </figure>
+          <figure class="Format_7_result_header_icon">
+            <img src="images/ico_pr.svg" alt="">
+          </figure>
+        </div>
+        <div class="Format_7_result_body">
+          <p class="Format_7_result_body_lead">
+            上記の条件でおすすめの転職エージェントが
+          </p>
+          <p class="Format_7_result_body_title">
+            <span>12件</span>見つかりました
+          </p>
+        </div>
+        <div class="Format_7_result_info">
+          <figure class="Format_7_result_info_icon">
+            <img src="images/ico_megaphone.svg" alt="">
+          </figure>
+          <p class="Format_7_result_info_text">
+            転職経験者は<span>平均2社以上</span>登録しています<br>幅広い求人を比較できるよう2～3社の登録がおすすめです
+          </p>
+        </div>
+      </section>
+
+      <!-- 検索結果なし -->
+      <section class="Format_7_result">
+        <div class="Format_7_result_header">
+          <figure class="Format_7_result_header_arrow">
+            <img src="images/img_arrow_under_gold.png" alt="">
+          </figure>
+          <figure class="Format_7_result_header_icon">
+            <img src="images/ico_pr.svg" alt="">
+          </figure>
+        </div>
+        <div class="Format_7_result_body">
+          <p class="Format_7_result_body_title -unmatch">
+            該当する転職サイトがございません
+          </p>
+        </div>
+        <div class="Format_7_result_info">
+          <figure class="Format_7_result_info_icon">
+            <img src="images/ico_alert.svg" alt="">
+          </figure>
+          <p class="Format_7_result_info_text">
+            お手数ですが、検索条件を変えて再度お試しください。
+          </p>
+        </div>
+      </section>
+
+      <section class="px-4">
+        <aside class="Item">
+          <h3 class="Item_title Item_title-ranking">ビズリーチ</h3>
+          <div class="Item_container">
+            <a href="#" class="Item_thumbnail">
+              <img src="images/banner/bizreach.jpeg" alt="">
+            </a>
+            <div class="Item_rating">
+              <p class="rate js-rate">4.8</p>
+              {{> stars}}
+            </div>
+            <p class="Item_description">
+              <span class="Highlight">年収500万円以上</span>は登録必須！<br>利用満足度No.1のハイクラス転職サービス。
+            </p>
+            <ul class="Item_info">
+              <li class="item">
+                <p class="title">求人数</p>
+                <p class="text">13.2万件</p>
+              </li>
+              <li class="item">
+                <p class="title">対応エリア</p>
+                <p class="text">全国</p>
+              </li>
+              <li class="item">
+                <p class="title">対象年代</p>
+                <p class="text">20代後半〜50代後半</p>
+              </li>
+              <li class="item">
+                <p class="title">対応職種</p>
+                <p class="text">全職種</p>
+              </li>
+            </ul>
+            <div class="Item_recommend">
+              <p class="title">〈 こんな方におすすめ 〉</p>
+              <ul class="list">
+                <li>現在年収が500万円以上ある</li>
+                <li>自分の市場価値がどのくらいか知りたい</li>
+                <li>大手・優良企業に転職したい</li>
+              </ul>
+            </div>
+            <div class="Item_cta">
+              <a href="#" class="Button Button-full"><span>『ビスリーチ』の</span>公式サイトはこちら</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    {{> footer}}
+  </div>
+  <link rel="stylesheet" href="/override/override.css">
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

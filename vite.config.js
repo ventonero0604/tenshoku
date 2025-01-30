@@ -255,6 +255,7 @@ export default defineConfig({
         working_mother: resolve(__dirname, root, "working_mother.html"),
         remote: resolve(__dirname, root, "remote.html"),
         overseas: resolve(__dirname, root, "overseas.html"),
+        search_result: resolve(__dirname, root, "search_result.html"),
         sitemap: resolve(__dirname, root, "sitemap.html"),
       },
     },

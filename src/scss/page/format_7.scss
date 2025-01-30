@@ -1,0 +1,146 @@
+@use "../foundation/pxvw.scss" as vwsp;
+@use "../foundation/breakPoint.scss" as bp;
+@use "../foundation/text.scss" as text;
+
+/*
+  Fortmat_7 
+    - 検索結果
+*/
+
+.Format_7 {
+  padding-bottom: 40px;
+
+  &_query {
+    background: var(--deep-blue, #081059);
+    padding: 27px 16px 35px;
+    display: grid;
+    gap: 20px;
+    &_header {
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      &_title {
+        @include text.h2;
+      }
+      &_retry {
+        width: 180px;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        border: 1px solid var(--white, #fff);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        &_icon {
+          background: white;
+          width: 40px;
+          height: 100%;
+          display: grid;
+          place-items: center;
+        }
+        &_text {
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+    &_body {
+      border-radius: 8px;
+      background: var(--pale-blue, #f2f7f9);
+      padding: 20px 16px;
+      &_list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      &_item {
+        display: grid;
+        gap: 8px;
+        height: max-content;
+        &_title {
+          color: var(--turquoise, #168ab1);
+          font-weight: bold;
+        }
+        &_text {
+          border-radius: 8px;
+          background: var(--white, #fff);
+          text-align: center;
+          padding: 10px 10px 13px;
+          display: grid;
+          grid-template-rows: subgrid;
+        }
+      }
+    }
+  }
+
+  &_result {
+    padding: 20px 16px 33px;
+    display: grid;
+    gap: 16px;
+    &_header {
+      display: grid;
+      place-items: center;
+      position: relative;
+      &_arrow {
+        width: 32px;
+      }
+      &_icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+      }
+    }
+    &_body {
+      display: grid;
+      place-items: center;
+      &_lead {
+        color: var(--deep-blue, #081059);
+        @include text.h3;
+      }
+      &_title {
+        color: var(--gold, #b59443);
+        @include text.h2;
+        span {
+          @include text.h1;
+          color: var(--turquoise, #168ab1);
+        }
+        &.-unmatch {
+          color: #ff6001;
+          @include text.h3;
+        }
+      }
+    }
+    &_info {
+      border-radius: 10px;
+      background: #fff6f1;
+      padding: 11px 16px 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+      &_icon {
+        width: 37px;
+      }
+      &_text {
+        @include text.sub;
+        span {
+          @include text.sub;
+          color: var(--turquoise, #168ab1);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .Item {
+    .Item_title-ranking:before {
+      display: none;
+    }
+    .Item_cta {
+      margin-bottom: 40px;
+    }
+  }
+}
