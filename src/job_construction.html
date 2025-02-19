@@ -51,7 +51,268 @@
           </p>
           <h2 class="SectionTitle_title">転職サイト5社比較</h2>
         </div>
-        {{> compareTable}}
+        <div class="CompareTable js-CompareTable">
+          <table>
+            <tr>
+              <th>転職サービス</th>
+              <th>総合評価</th>
+              <th>求人数</th>
+              <th>職種</th>
+            </tr>
+            <tr>
+              <td>
+                <div class="info">
+                  <div class="ranking">
+                    <img src="images/ico_crown_gold.svg" alt="">
+                    <span class="text">No.1</span>
+                  </div>
+                  <figure class="logo">
+                    <img src="images/logo/kensetsudatabase.png" alt="">
+                  </figure>
+                  <p class="text">
+                    利用満足度No.1<br>
+                    年収500万円以上に◎
+                  </p>
+                  <a href="#" class="Button Button-small">
+                    公式サイト
+                  </a>
+                </div>
+              </td>
+              <td>
+                <p class="rate js-rate">4.8</p>
+                {{> smallStars}}
+              </td>
+              <td>
+                <div class="amount">
+                  <p class="text"><b>13.2</b>万件</p>
+                  <img class="evaluation" src="images/ico_compare_circle_double.svg" alt="">
+                </div>
+              </td>
+              <td>
+                <div class="construction_categories">
+                  <ul class="construction_categories_list">
+                    <li class="construction_categories_list_item">
+                      <span class="icon blue">施</span>
+                      <span class="text">施工管理</span>
+                    </li>
+                    <li class="construction_categories_list_item">
+                      <span class="icon orange">設</span>
+                      <span class="text">設備管理</span>
+                    </li>
+                    <li class="construction_categories_list_item">
+                      <span class="icon navy">設</span>
+                      <span class="text">設計</span>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="info">
+                  <div class="ranking">
+                    <span class="text">No.2</span>
+                  </div>
+                  <figure class="logo">
+                    <img src="images/logo/jobree.png" alt="">
+                  </figure>
+                  <p class="text">
+                    圧倒的求人数！<br>
+                    業種問わず登録必須
+                  </p>
+                  <a href="#" class="Button Button-small">
+                    公式サイト
+                  </a>
+                </div>
+              </td>
+              <td>
+                <p class="rate js-rate">4.5</p>
+                {{> smallStars}}
+              </td>
+              <td>
+                <div class="amount">
+                  <p class="text"><b>36</b>万件</p>
+                  <img class="evaluation" src="images/ico_compare_circle_single.svg" alt="">
+                </div>
+              </td>
+              <td>
+                <div class="construction_categories">
+                  <ul class="construction_categories_list">
+                    <li class="construction_categories_list_item">
+                      <span class="icon blue">施</span>
+                      <span class="text">施工管理</span>
+                    </li>
+                    <li class="construction_categories_list_item">
+                      <span class="icon orange">設</span>
+                      <span class="text">設備管理</span>
+                    </li>
+                    <li class="construction_categories_list_item">
+                      <span class="icon navy">設</span>
+                      <span class="text">設計</span>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="info">
+                  <div class="ranking">
+                    <span class="text">No.3</span>
+                  </div>
+                  <figure class="logo">
+                    <img src="images/logo/kenchikutensyoku.png" alt="">
+                  </figure>
+                  <p class="text">
+                    利用満足度No.1※<br>
+                    好条件の独占求人多数
+                  </p>
+                  <a href="#" class="Button Button-small">
+                    公式サイト
+                  </a>
+                </div>
+              </td>
+              <td>
+                <p class="rate js-rate">4.0</p>
+                {{> smallStars}}
+              </td>
+              <td>
+                <div class="amount">
+                  <p class="text"><b>20</b>万件</p>
+                  <img class="evaluation" src="images/ico_compare_triangle.svg" alt="">
+                </div>
+              </td>
+              <td>
+                <div class="construction_categories">
+                  <ul class="construction_categories_list">
+                    <li class="construction_categories_list_item">
+                      <span class="icon blue">施</span>
+                      <span class="text">施工管理</span>
+                    </li>
+                    <li class="construction_categories_list_item">
+                      <span class="icon orange">設</span>
+                      <span class="text">設備管理</span>
+                    </li>
+                    <li class="construction_categories_list_item">
+                      <span class="icon navy">設</span>
+                      <span class="text">設計</span>
+                    </li>
+                    <li class="construction_categories_list_item">
+                      <span class="icon gold">積</span>
+                      <span class="text">積算 / 購買</span>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="info">
+                  <div class="ranking">
+                    <span class="text">No.4</span>
+                  </div>
+                  <figure class="logo">
+                    <img src="images/logo/rsg.png" alt="">
+                  </figure>
+                  <p class="text">
+                    丁寧なサポートで評判<br>
+                    独自求人も多数！
+                  </p>
+                  <a href="#" class="Button Button-small">
+                    公式サイト
+                  </a>
+                </div>
+              </td>
+              <td>
+                <p class="rate js-rate">3.7</p>
+                {{> smallStars}}
+              </td>
+              <td>
+                <div class="amount">
+                  <p class="text">非公開</p>
+                  <img class="evaluation -empty" src="images/ico_compare_line.svg" alt="">
+                </div>
+              </td>
+              <td>
+                <div class="construction_categories">
+                  <ul class="construction_categories_list">
+                    <li class="construction_categories_list_item">
+                      <span class="icon blue">施</span>
+                      <span class="text">施工管理</span>
+                    </li>
+                    <li class="construction_categories_list_item">
+                      <span class="icon orange">設</span>
+                      <span class="text">設備管理</span>
+                    </li>
+                    <li class="construction_categories_list_item">
+                      <span class="icon navy">設</span>
+                      <span class="text">設計</span>
+                    </li>
+                    <li class="construction_categories_list_item">
+                      <span class="icon gold">積</span>
+                      <span class="text">積算 / 購買</span>
+                    </li>
+                    <li class="construction_categories_list_item">
+                      <span class="icon black">発</span>
+                      <span class="text">発注者支援</span>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="info">
+                  <div class="ranking">
+                    <span class="text">No.5</span>
+                  </div>
+                  <figure class="logo">
+                    <img src="images/logo/careerplus.png" alt="">
+                  </figure>
+                  <p class="text">
+                    内定率80%超え<br>
+                    未経験層の転職に◎
+                  </p>
+                  <a href="#" class="Button Button-small">
+                    公式サイト
+                  </a>
+                </div>
+              </td>
+              <td>
+                <p class="rate js-rate">3.4</p>
+                {{> smallStars}}
+              </td>
+              <td>
+                <div class="amount">
+                  <p class="text">非公開</p>
+                  <img class="evaluation -empty" src="images/ico_compare_line.svg" alt="">
+                </div>
+              </td>
+              <td>
+                <div class="construction_categories">
+                  <ul class="construction_categories_list">
+                    <li class="construction_categories_list_item">
+                      <span class="icon blue">施</span>
+                      <span class="text">施工管理</span>
+                    </li>
+                    <li class="construction_categories_list_item">
+                      <span class="icon orange">設</span>
+                      <span class="text">設備管理</span>
+                    </li>
+                    <li class="construction_categories_list_item">
+                      <span class="icon navy">設</span>
+                      <span class="text">設計</span>
+                    </li>
+                    <li class="construction_categories_list_item">
+                      <span class="icon gold">積</span>
+                      <span class="text">積算 / 購買</span>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
       </section>
 
       <section class="ranking px-4 pt-8">

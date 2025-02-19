@@ -102,6 +102,49 @@
           }
         }
       }
+      .construction_categories {
+        display: grid;
+        place-items: center;
+        &_list {
+          display: grid;
+          gap: 8px;
+          &_item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            .icon {
+              width: 18px;
+              height: 18px;
+              display: grid;
+              place-items: center;
+              text-align: center;
+              border-radius: 4px;
+              font-size: 10px;
+              font-weight: 500;
+              color: white;
+              line-height: 1;
+            }
+            .blue {
+              background: var(--turquoise, #168ab1);
+            }
+            .orange {
+              background: #ff5f01;
+            }
+            .navy {
+              background: var(--deep-blue, #081059);
+            }
+            .gold {
+              background: var(--gold, #b59443);
+            }
+            .black {
+              background: var(--dark-gray, #2b2b2b);
+            }
+            .text {
+              @include text.sub;
+            }
+          }
+        }
+      }
     }
   }
 }
