@@ -182,13 +182,23 @@ $(function () {
   */
   if ($(".js-user-expand").length) {
     $(".js-user-expand").on("click", function () {
-      $(this).toggleClass("is-open");
-      $(".js-user-container").toggleClass("is-open");
+      const $button = $(this);
+      const $container = $button.prev(".js-user-container");
+
+      // コンテナが見つからない場合のデバッグ用ログ
+      if ($container.length === 0) {
+        console.error("js-user-container が見つかりませんでした。");
+        return;
+      }
+
+      $button.toggleClass("is-open");
+      $container.toggleClass("is-open");
+
       // ボタンのテキストを切り替える
-      if ($(this).hasClass("is-open")) {
-        $(this).find("span").text("閉じる");
+      if ($button.hasClass("is-open")) {
+        $button.find("span").text("閉じる");
       } else {
-        $(this).find("span").text("もっと読む");
+        $button.find("span").text("もっと読む");
       }
     });
   }
